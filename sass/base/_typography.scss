@@ -3,13 +3,19 @@
 \* ------------------------------------------------------------ */
 
 h1{
-	font-size: 8rem; 
+	font-size: 6.5rem; 
+	color: $color-white;
 }
 h2{
 	font-size: 6rem; 
 }
 h3{
-	font-size: 4rem; 
+	font-size: 2rem; 
+	font-family: Times New Roman,serif;
+	font-style: italic;
+	color: $color-white;
+	font-weight: 100;
+	letter-spacing: 2px; 
 }
 h4{
 	font-size: 3.5rem; 
