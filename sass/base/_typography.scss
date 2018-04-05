@@ -28,6 +28,7 @@ h6{
 	font-family: 'Poppins', sans-serif;
 	font-size: 2.5rem;
 	text-transform: capitalize; 
+	font-weight: bolder; 
 }
 
 /* ------------------------------------------------------------ *\
@@ -46,11 +47,11 @@ h6{
 	color: $color-selection;
 	p{ margin-bottom: .5rem;  }
 	.sub-heading{
-		font-size: 1.7rem; 
+		font-size: 1.2rem; 
 		font-family: 'Poppins', sans-serif;
 		font-style: italic;
 		font-weight: 300;
-		margin-bottom: 2.2rem;  
+		margin-bottom: 2rem;  
 	}
 	
 }

@@ -66,6 +66,9 @@
 \* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ *	Project Variables
 \* ------------------------------------------------------------ */
+.color--white {
+  color: #f3f3f3 !important; }
+
 /* ------------------------------------------------------------ *	Button Colors
 	linear-gradient(270deg,#f06449,#ef3636)
 
@@ -140,7 +143,8 @@ h5 {
 h6 {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
-  text-transform: capitalize; }
+  text-transform: capitalize;
+  font-weight: bolder; }
 
 /* ------------------------------------------------------------ *	
 	font-family: 'Poppins', sans-serif;
@@ -156,11 +160,11 @@ h6 {
   .modal-aboutme p {
     margin-bottom: .5rem; }
   .modal-aboutme .sub-heading {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: 300;
-    margin-bottom: 2.2rem; }
+    margin-bottom: 2rem; }
 
 /*  Header  */
 .header {
@@ -446,10 +450,20 @@ h6 {
     max-width: 100%; } }
 
 .btn {
-  font-size: 2rem;
+  font-size: 1.7rem;
   letter-spacing: 2px;
   text-transform: capitalize;
-  color: #ffffff; }
+  text-align: center;
+  font-family: 'Cabin', sans-serif;
+  color: #f3f3f3;
+  padding: 1.2rem 2rem;
+  position: relative; }
+
+.btn--primary {
+  background: linear-gradient(270deg, #f06449, #ef3636); }
+  .btn--primary:hover {
+    background: linear-gradient(270deg, #235aa6, #101b3b);
+    transition: all ease .5s; }
 
 /*  Modals  */
 #aboutme {
@@ -463,8 +477,12 @@ h6 {
   z-index: 100;
   box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.55); }
   #aboutme .cols .col-6 {
-    padding: 10rem 8rem;
+    padding: 10rem 8rem 10rem 10rem;
     text-align: left; }
+    #aboutme .cols .col-6 .underlined {
+      color: #f06449;
+      text-decoration: none;
+      font-weight: 500; }
     #aboutme .cols .col-6 ul {
       margin-top: 3rem;
       text-align: center; }
@@ -491,5 +509,61 @@ h6 {
       left: 6.5rem; }
       #aboutme .cols .col-6 .parameters p {
         font-size: 1.3rem; }
+  #aboutme .cols .bg--white {
+    text-align: justify; }
   #aboutme .cols .bg--dark {
     background-color: rgba(28, 29, 37, 0.985); }
+    #aboutme .cols .bg--dark form {
+      margin-bottom: 4rem; }
+      #aboutme .cols .bg--dark form label {
+        color: #f3f3f3;
+        letter-spacing: 2px;
+        font-size: 1.1rem;
+        /*margin-top: 1rem; */
+        font-family: 'Poppins', sans-serif;
+        padding-left: .5rem; }
+      #aboutme .cols .bg--dark form input {
+        margin-bottom: 2rem; }
+      #aboutme .cols .bg--dark form input,
+      #aboutme .cols .bg--dark form textarea {
+        width: 100%;
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid silver;
+        color: #f3f3f3;
+        font-size: 1.2rem;
+        padding: 8px 5px;
+        font-weight: 300;
+        font-family: 'Poppins', sans-serif;
+        letter-spacing: 2px;
+        transition: all .5s; }
+        #aboutme .cols .bg--dark form input:focus,
+        #aboutme .cols .bg--dark form textarea:focus {
+          border-color: #f06449; }
+      #aboutme .cols .bg--dark form textarea {
+        resize: none; }
+    #aboutme .cols .bg--dark .modal-close {
+      position: absolute;
+      top: 4rem;
+      right: 4rem;
+      cursor: pointer; }
+      #aboutme .cols .bg--dark .modal-close:hover span {
+        background-color: #f06449; }
+      #aboutme .cols .bg--dark .modal-close span {
+        position: relative;
+        left: 0;
+        display: block;
+        width: 3.5rem;
+        height: 3px;
+        margin-bottom: 7px;
+        background-color: #f3f3f3;
+        border-radius: 4px;
+        transition: all .3s; }
+      #aboutme .cols .bg--dark .modal-close #close-one {
+        transform: rotate(45deg);
+        top: 43px; }
+      #aboutme .cols .bg--dark .modal-close #close-two {
+        transform: rotate(-45deg);
+        top: 33px; }

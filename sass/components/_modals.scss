@@ -13,8 +13,14 @@
 
 	.cols{
 		.col-6{
-			padding: 10rem 8rem;
+			padding: 10rem 8rem 10rem 10rem;
 			text-align: left;
+			
+			.underlined{
+				color: $color-primary;
+				text-decoration: none;
+				font-weight: 500; 
+			}
 
 			ul{
 				margin-top: 3rem;
@@ -41,10 +47,78 @@
 		}
 
 		.bg--white{
+			text-align: justify;
 
 		}
 		.bg--dark{
 			background-color:  rgba(28,29,37,.985);
+
+			form{
+				margin-bottom: 4rem; 
+				label{
+					color: $color-text;
+					letter-spacing: 2px;
+					font-size: 1.1rem;
+					/*margin-top: 1rem; */
+					font-family: 'Poppins', sans-serif;  
+					padding-left: .5rem;  
+				}
+				input{
+					margin-bottom: 2rem; 
+				}
+				input,
+				textarea{
+					width: 100%;
+					display: block;
+					background-color: transparent;
+					border: none; outline: none;
+					border-bottom: 2px solid silver;
+					color: $color-text;
+					font-size: 1.2rem;
+					padding: 8px 5px;
+					font-weight: 300;
+					font-family: 'Poppins', sans-serif; 
+					letter-spacing: 2px; 
+					transition: all .5s;
+					
+					&:focus{
+						border-color: $color-primary;
+					}
+				}
+				textarea{
+					resize: none;
+
+				}
+			}
+
+			.modal-close{
+				position: absolute; 
+				top: 4rem; right: 4rem;
+				cursor: pointer;
+
+				&:hover{
+					span{ background-color: $color-primary; }
+				}
+
+				span{
+					position: relative; 
+					left: 0;
+					display: block;
+					width: 3.5rem; height: 3px;
+					margin-bottom: 7px;
+					background-color: $color-text;
+					border-radius: 4px;
+					transition: all .3s;
+				}
+				#close-one{
+					transform: rotate(45deg);
+					top: 43px;
+				}
+				#close-two{
+					transform: rotate(-45deg);
+					top: 33px;
+				}
+			}
 		}
 	}
 }

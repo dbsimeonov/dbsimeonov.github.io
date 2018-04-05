@@ -19,6 +19,11 @@ $color-hover : #1b2e63;
 $color-links : #b0b2c3;
 
 
+
+.color--white{
+	color: $color-text !important;
+}
+
 /* ------------------------------------------------------------ *\
 	Button Colors
 	linear-gradient(270deg,#f06449,#ef3636)

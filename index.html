@@ -5,6 +5,7 @@
 	TODO
 
 		- Hover Border Bottom Effect
+		- Clean the Stylesheet on Modals
 
 
 	 -->
@@ -73,13 +74,14 @@
 
 
 
-	<div class="modal modal-aboutme" id="aboutme">
+	<div class="modal modal-aboutme" id="aboutme" onclick="closeModal()">
 		<div class="cols">
 			<div class="col-6 bg--white">
 				<h6>about me.</h6>
 				<p class="sub-heading">Interactive Front-end developer</p><!-- /.sub-heading -->
-				<p>I'm Daniel Simeonov, 21-year-old Bulgarian who is self-taught code for the past year. I'm weird person like all coders who likes to create everything from scratch and have a passion of learning new things.</p>
-				<p>I like challenges and to resolve tasks I've never faced before.</p>
+				<p>I'm Daniel Simeonov, 21-year-old Bulgarian who is <span class="underlined">self-taught</span> code for the past year. I'm weird person like all coders who likes to create everything from scratch and have a passion of learning new things.</p>
+				<p>My aim is to get a job as a <span class="underlined">Front End Developer.</span></p>
+				<p>I like <span class="underlined">challenges</span> and to resolve tasks I've never faced before.</p>
 				<p>When I'm not working or futzing around with code, you can find me on the Squad Rack at the gym or the Bench Press.</p>
 				<ul>
 					<li><i class="fab fa-css3-alt"></i></li>
@@ -92,7 +94,27 @@
 				</div><!-- /#parameters.parameters -->
 			</div><!-- /.col-6 -->
 			<div class="col-6 bg--dark">
-				
+				<h6 class="color--white">Let's talk</h6>
+				<p class="sub-heading color--white">New projects, freelance inquiry or even a coffee(why not a pint).</p><!-- /.sub-heading -->
+
+				<form>
+					<label for="name">Name *</label>
+					<input type="text">
+
+					<label for="email">E-mail *</label>
+					<input type="text">
+					
+					<label for="message">Message *</label>
+					<textarea name="message" rows="5"></textarea>
+				</form>
+
+				<a href="#" class="btn btn--primary">Send Message</a>
+
+				<div class="modal-close">
+					<span id="close-one"></span>
+					
+					<span id="close-two"></span>
+				</div><!-- /.modal-close -->
 			</div><!-- /.col-6 bg-/-dark -->
 		</div><!-- /.cols -->
 	</div><!-- /#aboutme.modal modal-aboutme -->
