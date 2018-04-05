@@ -5,13 +5,14 @@
 h1{
 	font-size: 6.5rem; 
 	color: $color-white;
+	font-family: 'Poppins', sans-serif;
 }
 h2{
 	font-size: 6rem; 
 }
 h3{
 	font-size: 2rem; 
-	font-family: Times New Roman,serif;
+	font-family: 'Poppins', sans-serif;
 	font-style: italic;
 	color: $color-white;
 	font-weight: 100;
@@ -24,12 +25,33 @@ h5{
 	font-size: 3rem; 
 }
 h6{
-	font-size: 2rem; 
+	font-family: 'Poppins', sans-serif;
+	font-size: 2.5rem;
+	text-transform: capitalize; 
 }
 
+/* ------------------------------------------------------------ *\
+	
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Cabin', sans-serif;
+
+\* ------------------------------------------------------------ */
 
 /* ------------------------------------------------------------ *\
 	Project Typography
 \* ------------------------------------------------------------ */
-
+.modal-aboutme{
+	font-size: 1.5rem;
+	font-family: 'Poppins', sans-serif;
+	color: $color-selection;
+	p{ margin-bottom: .5rem;  }
+	.sub-heading{
+		font-size: 1.7rem; 
+		font-family: 'Poppins', sans-serif;
+		font-style: italic;
+		font-weight: 300;
+		margin-bottom: 2.2rem;  
+	}
+	
+}
 

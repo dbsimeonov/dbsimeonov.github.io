@@ -117,14 +117,15 @@ img {
 \* ------------------------------------------------------------ */
 h1 {
   font-size: 6.5rem;
-  color: #ffffff; }
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif; }
 
 h2 {
   font-size: 6rem; }
 
 h3 {
   font-size: 2rem;
-  font-family: Times New Roman,serif;
+  font-family: 'Poppins', sans-serif;
   font-style: italic;
   color: #ffffff;
   font-weight: 100;
@@ -137,10 +138,30 @@ h5 {
   font-size: 3rem; }
 
 h6 {
-  font-size: 2rem; }
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  text-transform: capitalize; }
 
+/* ------------------------------------------------------------ *	
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Cabin', sans-serif;
+
+\* ------------------------------------------------------------ */
 /* ------------------------------------------------------------ *	Project Typography
 \* ------------------------------------------------------------ */
+.modal-aboutme {
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #1c1d25; }
+  .modal-aboutme p {
+    margin-bottom: .5rem; }
+  .modal-aboutme .sub-heading {
+    font-size: 1.7rem;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 2.2rem; }
+
 /*  Header  */
 .header {
   height: 100vh;
@@ -149,19 +170,7 @@ h6 {
   position: relative;
   top: 0;
   right: 0;
-  background-color: #1c1d25;
-  /*.header__layout{
-		position: absolute;
-		top: 50%; left: 50%;
-		transform: translate(-50%, -50%);
-		width: 100%;
-		height: 100%;
-		background-repeat: no-repeat;
-		background-size: 40%;
-		background-position: 50%;
-		opacity: .2;
-		z-index: 1; 
-	}*/ }
+  background-color: #1c1d25; }
   .header .header__socials {
     position: absolute;
     top: 50%;
@@ -181,7 +190,9 @@ h6 {
     justify-content: space-between;
     align-items: center;
     margin-top: -1rem;
-    z-index: 10; }
+    z-index: 10;
+    /*font-family: 'Cabin', sans-serif;*/
+    font-family: 'Poppins', sans-serif; }
     .header .nav img {
       height: 13rem;
       width: 13rem;
@@ -191,7 +202,7 @@ h6 {
       display: inline; }
       .header .nav .nav__items .nav__item a {
         color: #b0b2c3;
-        font-size: 2rem;
+        font-size: 1.8rem;
         text-transform: capitalize;
         transition: all .3s;
         /*  add the hover border effect  */ }
@@ -439,3 +450,46 @@ h6 {
   letter-spacing: 2px;
   text-transform: capitalize;
   color: #ffffff; }
+
+/*  Modals  */
+#aboutme {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  text-align: center;
+  background-color: #f3f3f3;
+  z-index: 100;
+  box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.55); }
+  #aboutme .cols .col-6 {
+    padding: 10rem 8rem;
+    text-align: left; }
+    #aboutme .cols .col-6 ul {
+      margin-top: 3rem;
+      text-align: center; }
+      #aboutme .cols .col-6 ul li {
+        display: inline;
+        font-size: 4rem; }
+      #aboutme .cols .col-6 ul .fa-js-square:hover {
+        color: #ECD120;
+        transition: color .3s; }
+      #aboutme .cols .col-6 ul .fa-sass:hover {
+        color: #CF649A;
+        transition: color .3s; }
+      #aboutme .cols .col-6 ul .fa-css3-alt:hover {
+        color: #E54D26;
+        transition: color .3s; }
+      #aboutme .cols .col-6 ul .fa-globe:hover {
+        color: #26408B;
+        transition: color .3s; }
+      #aboutme .cols .col-6 ul li + li {
+        margin-left: 2rem; }
+    #aboutme .cols .col-6 .parameters {
+      position: absolute;
+      bottom: 2rem;
+      left: 6.5rem; }
+      #aboutme .cols .col-6 .parameters p {
+        font-size: 1.3rem; }
+  #aboutme .cols .bg--dark {
+    background-color: rgba(28, 29, 37, 0.985); }
