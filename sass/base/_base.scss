@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before{
+	margin: 0; padding: 0; box-sizing: inherit;
+}
+*:focus {
+    outline: none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+	
+	@include respond(desktop){
+		font-size: 62.5%; 
+	} 
+	@include respond(tablet){ 
+		font-size: 56.25%; 
+	}
+	@include respond(phone){
+		font-size: 45%; 
+	}
+}
+ 
+a {
+  text-decoration: none; 
+}
+
+body{
+  	box-sizing: border-box;
+}
+
+ul{
+	list-style: none;
+}
+
+img {
+	display: inline-block;
+	vertical-align: middle;
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
