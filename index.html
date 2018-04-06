@@ -51,30 +51,85 @@
 			<img src="css/images/sprite/logo.png" alt="logo">
 			<ul class="nav__items">
 				<li class="nav__item">
-					<a href="#">case studies</a>
+					<a href="#">Projects</a>
 				</li><!-- /.nav__item -->
 				<li class="nav__item">
 					<a href="#">Experiments</a>
 				</li><!-- /.nav__item -->
 				<li class="nav__item">
-					<a href="#">Contact</a>
+					<a href="#" onclick="modalAbout();">Contact</a>
 				</li><!-- /.nav__item -->
 				<li class="nav__item">
 					<a href="#"><i class="fas fa-exchange-alt"></i></a>
 				</li><!-- /.nav__item -->
 			</ul><!-- /.nav__items -->
 		</nav><!-- /.nav -->
+
 		<div class="header__content">
 			<h1>Daniel Simeonov</h1>
 			<h3 class="mb-md">Interactive Front-end Developer</h3>
 			<a href="#" class="btn btn--primary">About me</a>
 		</div><!-- /.header__content -->
+
+
+		<div class="header__projects">
+			<!-- <h2>Projects</h2> -->
+			<div class="cols" id="projects">
+				<div class="col-4">
+					<img src="css/images/temp/restaurant.jpg" alt="restaurant website">
+					<div class="col-4-text">
+						<span>Fine-Dining-Restaurant</span>	
+						<a href="#" class="btn btn--primary btn--sm">Read More.</a>
+					</div><!-- /.col-4-text -->
+				</div><!-- /.col-4 -->
+
+				<div class="col-4">
+					<img src="css/images/temp/restaurant.jpg" alt="restaurant website">
+					<div class="col-4-text">
+						<span>Fine-Dining-Restaurant</span>	
+						<a href="#" class="btn btn--primary btn--sm">Read More.</a>
+					</div><!-- /.col-4-text -->
+				</div><!-- /.col-4 -->
+
+				<div class="col-4">
+					<img src="css/images/temp/restaurant.jpg" alt="restaurant website">
+					<div class="col-4-text">
+						<span>Fine-Dining-Restaurant</span>	
+						<a href="#" class="btn btn--primary btn--sm">Read More.</a>
+					</div><!-- /.col-4-text -->
+				</div><!-- /.col-4 -->
+
+				<div class="col-4">
+					<img src="css/images/temp/restaurant.jpg" alt="restaurant website">
+					<div class="col-4-text">
+						<span>Fine-Dining-Restaurant</span>	
+						<a href="#" class="btn btn--primary btn--sm">Read More.</a>
+					</div><!-- /.col-4-text -->
+				</div><!-- /.col-4 -->
+
+				<div class="col-4">
+					<img src="css/images/temp/restaurant.jpg" alt="restaurant website">
+					<div class="col-4-text">
+						<span>Fine-Dining-Restaurant</span>	
+						<a href="#" class="btn btn--primary btn--sm">Read More.</a>
+					</div><!-- /.col-4-text -->
+				</div><!-- /.col-4 -->
+
+				<div class="col-4">
+					<img src="css/images/temp/restaurant.jpg" alt="restaurant website">
+					<div class="col-4-text">
+						<span>Fine-Dining-Restaurant</span>	
+						<a href="#" class="btn btn--primary btn--sm">Read More.</a>
+					</div><!-- /.col-4-text -->
+				</div><!-- /.col-4 -->
+			</div><!-- /#projects.cols -->	
+		</div><!-- /.header__projects -->
 	</header><!-- /#header.header -->
 	
 
 
 
-	<div class="modal modal-aboutme" id="aboutme" onclick="closeModal()">
+	<div class="modal modal-aboutme" id="aboutme">
 		<div class="cols">
 			<div class="col-6 bg--white">
 				<h6>about me.</h6>
@@ -110,14 +165,14 @@
 
 				<a href="#" class="btn btn--primary">Send Message</a>
 
-				<div class="modal-close">
+				<div class="modal-close" onclick="modalAbout()">
 					<span id="close-one"></span>
 					
 					<span id="close-two"></span>
 				</div><!-- /.modal-close -->
 			</div><!-- /.col-6 bg-/-dark -->
 		</div><!-- /.cols -->
-	</div><!-- /#aboutme.modal modal-aboutme -->
+	</div><!-- /#aboutme.modal modal-aboutme --> 
 	<footer class="footer" id="footer">
 		<script>
 			gumshoe.init();

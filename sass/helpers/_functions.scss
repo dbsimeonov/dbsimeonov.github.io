@@ -1,0 +1,19 @@
+/* ------------------------------------------------------------ *\
+	Keyframes
+\* ------------------------------------------------------------ */
+.fromTop{
+	animation: fromTop .3s;
+	visibility: visible !important;
+}
+
+@keyframes fromTop{
+	0%{
+		opacity: 0;
+		transform: translateY(%);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(-70%);
+	} 
+
+}

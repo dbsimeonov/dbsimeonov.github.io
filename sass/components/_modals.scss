@@ -10,6 +10,11 @@
 	background-color: $color-text;
 	z-index: 100; 
 	box-shadow: 0 20px 80px 0 rgba(0,0,0,.55);
+	overflow: hidden;
+	/*transform: translateY(70%);*/
+	visibility: hidden;
+	opacity: 0; 
+	transition: all ease .5s;
 
 	.cols{
 		.col-6{
@@ -79,7 +84,7 @@
 					font-weight: 300;
 					font-family: 'Poppins', sans-serif; 
 					letter-spacing: 2px; 
-					transition: all .5s;
+					transition: all ease-in .5s;
 					
 					&:focus{
 						border-color: $color-primary;
