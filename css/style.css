@@ -220,6 +220,7 @@ h6 {
       height: 13rem;
       width: 13rem;
       margin-top: 0;
+      cursor: pointer;
       filter: grayscale(1); }
     .header .nav .nav__items .nav__item {
       display: inline; }
@@ -238,11 +239,17 @@ h6 {
     position: absolute;
     top: 35%;
     left: 10rem;
-    display: none;
+    /*display: none;*/
     /*transform: translateX(-100%);*/
-    /*transition: opacity ease 4.4s;*/ }
+    transition: ease .4s; }
   .header .header__projects {
     position: relative;
+    margin-top: 4rem;
+    /*  For Onclick Function  */
+    transform: translateX(100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
     /*top: 35%; left: 10rem;*/
     /*padding: 0 4vw;*/ }
     .header .header__projects h2 {
@@ -252,6 +259,18 @@ h6 {
       -webkit-transform: rotate(-30deg);
       /* Safari */
       transform: rotate(-30deg); }
+    .header .header__projects .section--logo {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 3rem;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: #dadada;
+      text-transform: uppercase;
+      z-index: 2;
+      transform: rotateZ(-30deg);
+      margin-left: -4rem; }
     .header .header__projects .cols .col-4 {
       padding: 1rem 2.5rem;
       position: relative;

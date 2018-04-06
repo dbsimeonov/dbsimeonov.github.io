@@ -48,10 +48,10 @@
 			<a href="#" class="social__item"><i class="fab fa-facebook-f"></i></i></a>
 		</div><!-- /.header__socials -->
 		<nav class="nav">
-			<img src="css/images/sprite/logo.png" alt="logo">
+			<img src="css/images/sprite/logo.png" id="logo" onclick="goHome()" alt="logo">
 			<ul class="nav__items">
 				<li class="nav__item">
-					<a href="#">Projects</a>
+					<a href="#" onclick="projects();">Projects</a>
 				</li><!-- /.nav__item -->
 				<li class="nav__item">
 					<a href="#">Experiments</a>
@@ -64,16 +64,18 @@
 				</li><!-- /.nav__item -->
 			</ul><!-- /.nav__items -->
 		</nav><!-- /.nav -->
-
-		<div class="header__content">
+		
+		<!-- HOMEPAGE -->
+		<div class="header__content" id="homePage">
 			<h1>Daniel Simeonov</h1>
 			<h3 class="mb-md">Interactive Front-end Developer</h3>
 			<a href="#" class="btn btn--primary">About me</a>
 		</div><!-- /.header__content -->
 
-
-		<div class="header__projects">
+		<!-- PROJECTS PAGE -->
+		<div class="header__projects" id="projectsPage">
 			<!-- <h2>Projects</h2> -->
+			<p class="section--logo">Projects</p><!-- /.section-/-logo -->
 			<div class="cols no-gutters" id="projects">
 				<div class="col-4">
 					<img src="css/images/temp/restaurant.jpg" alt="restaurant website">
