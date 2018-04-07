@@ -26,6 +26,16 @@ const goHome = e => {
 	const home 		= document.querySelector('#homePage');
 	const projects  = document.querySelector('#projectsPage');
 
+	if(projects.style.opacity = '1'){
+		projects.style.transform = 'translateX(100%)';
+		projects.style.visibility = 'hidden';
+		projects.style.opacity = '0';
+
+		home.style.transform = 'translateX(0%)'
+		home.style.visibility = 'visible';
+		home.style.opacity = '1';
+	}
+
 }
 
 const projects = e => {
