@@ -17,3 +17,28 @@
 	} 
 
 }
+
+
+/* ------------------------------------------------------------ *\
+	Animations triggered by js
+\* ------------------------------------------------------------ */
+
+@keyframe modalPop{
+	0%{
+		opacity: 0;
+		visibility: hidden;
+		/*transform: scale(0);*/
+	}
+	100%{
+		opacity: 1;
+		visibility: visible;
+		/*transform: scale(1);*/
+	} 
+}
+.modalPop{
+	animation: modalPop 1s ease !important;
+	opacity: 1 !important;
+	visibility: visible !important; 
+}
+
+

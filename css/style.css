@@ -12,6 +12,23 @@
     opacity: 1;
     transform: translateY(-70%); } }
 
+/* ------------------------------------------------------------ *	Animations triggered by js
+\* ------------------------------------------------------------ */
+@keyframe modalPop {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    /*transform: scale(0);*/ }
+  100% {
+    opacity: 1;
+    visibility: visible;
+    /*transform: scale(1);*/ } }
+
+.modalPop {
+  animation: modalPop 1s ease !important;
+  opacity: 1 !important;
+  visibility: visible !important; }
+
 /* ------------------------------------------------------------ *	Universal Helpers
 \* ------------------------------------------------------------ */
 .full-height {
@@ -557,6 +574,10 @@ h6 {
   padding: .8rem 1.5rem; }
 
 /*  Modals  */
+.modal-aboutme {
+  visibility: hidden;
+  opacity: 0; }
+
 #aboutme {
   position: absolute;
   top: 50%;
@@ -569,8 +590,6 @@ h6 {
   box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.55);
   overflow: hidden;
   /*transform: translateY(70%);*/
-  visibility: hidden;
-  opacity: 0;
   transition: all ease .5s; }
   #aboutme .cols .col-6 {
     padding: 10rem 8rem 10rem 10rem;
