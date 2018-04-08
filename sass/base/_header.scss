@@ -68,11 +68,10 @@
 	}
 
 	.header__content{
-		/*opacity: 0; */
 		position: absolute;
 		top: 35%; left: 10rem;
-		/*display: none;*/
-		/*transform: translateX(-100%);*/
+
+		opacity: 0; visibility: hidden; transform: scale(0);
 		transition:  ease .4s;
 	}
 

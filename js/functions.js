@@ -1,34 +1,10 @@
 //  Functions
-
-// const modalAbout = e =>{
-	
-// 	const target  = document.querySelector('#aboutme');
-// 	const content = document.querySelector('.header__content');
-
-// 	if(target.style.visibility == 'visible'){
-// 		target.style.opacity = '0';
-// 		target.style.visibility = 'hidden';
-// 		// content.style.opacity = '1';
-// 	}else{
-// 		target.style.opacity = '1';
-// 		target.style.visibility = 'visible';
-// 		// content.style.opacity = '0';
-// 	}
-// 	// console.log('Event has triggered');
-// }
-
 const modalAbout = () => {
 	// Declaring variables about the modal
 	const target  = document.querySelector('#aboutme');
 	const content = document.querySelector('.header__content');
-
-	if(target.classList.contains('modalPop')){
-		target.classList.remove('modalPop');
-	}else{
-		target.classList.add('modalPop');
-	}
-
-
+	// Using ternary operator to check if its already oppened
+	target.classList.contains('modalPop') ? target.classList.remove('modalPop') : target.classList.add('modalPop');
 }
 
 const goHome = e => {
@@ -44,12 +20,17 @@ const goHome = e => {
 		home.style.visibility = 'visible';
 		home.style.opacity = '1';
 	}
-
 }
 
 const projects = e => {
 	const home 		= document.querySelector('#homePage');
 	const projects  = document.querySelector('#projectsPage');
+	const homePage = document.getElementById('homePage');
+
+	// Removing the content from the homePage
+	if(homePage.classList.contains('scalePop')){
+		homePage.classList.remove('scalePop');
+	}
 
 	home.style.transform = 'translateX(-100%)'
 	home.style.visibility = 'hidden';
@@ -62,6 +43,7 @@ const projects = e => {
 }
 
 
+
 // Create the animation with css classes
 // - Onload add class for home page sliding text
 // - Onclick remove class and add class for fade-left/right
@@ -69,5 +51,11 @@ const projects = e => {
 // - each calss needs to have transform/visibility/opacity
 // Modal -
 // Do it with toggling classes
+window.onload = () => {
+	// add class for loading page(homePage )
+	const homePage = document.getElementById('homePage');
 
+	homePage.classList.add('scalePop');
+
+}
 
