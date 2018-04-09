@@ -8,27 +8,38 @@ const modalAbout = () => {
 }
 
 const goHome = e => {
-	const home 		= document.querySelector('#homePage');
-	const projects  = document.querySelector('#projectsPage');
-
+	const home 		  = document.querySelector('#homePage');
+	const projects    = document.querySelector('#projectsPage');
+	const experiments = document.querySelector('#experimentsPage');
 	// checking if projects is active
 	if(projects.style.opacity = '1'){
 		// checking what animation class it has
 		if(projects.classList.contains('fromLeft')){
 			projects.classList.remove('fromLeft');
-			home.classList.add('fromRight');
+			home.classList.add('fromLeft');
 		}else if(projects.classList.contains('fromRight')){
 			projects.classList.remove('fromRight');
-			home.classList.add('fromRight');	
+			home.classList.add('fromLeft');	
+		}
+	}
+
+	// check if experiments is active
+	if(experiments.style.opacity = '1'){
+		if(experiments.classList.contains('fromLeft')){
+			experiments.classList.remove('fromLeft');
+			home.classList.add('fromLeft');
+		}else if(experiments.classList.contains('fromRight')){
+			experiments.classList.remove('fromRight');
+			home.classList.add('fromLeft');
 		}
 	}
 
 }
 
 const projects = e => {
-	const home 		= document.querySelector('#homePage');
-	const projects  = document.querySelector('#projectsPage');
-
+	const home 		  = document.querySelector('#homePage');
+	const projects    = document.querySelector('#projectsPage');
+	const experiments = document.querySelector('#experimentsPage');
 	// checking if home is active
 	if(home.style.opacity = '1'){
 		// checking what animation class contains
@@ -38,8 +49,56 @@ const projects = e => {
 		}else if(home.classList.contains('fromRight')){
 			home.classList.remove('fromRight');
 			projects.classList.add('fromRight');
+		}else if(home.classList.contains('fromLeft')){
+			home.classList.remove('fromLeft');
+			projects.classList.add('fromRight');
 		}
 	}
+	// check if experiments is active
+	if(experiments.style.opacity = '1'){
+		if(experiments.classList.contains('fromLeft')){
+			experiments.classList.remove('fromLeft');
+			projects.classList.add('fromLeft');
+		}else if(experiments.classList.contains('fromRight')){
+			experiments.classList.remove('fromRight');
+			projects.classList.add('fromLeft');
+		}
+	}
+
+}
+
+const experiments = e => {
+	const home 		  = document.querySelector('#homePage');
+	const projects    = document.querySelector('#projectsPage');
+	const experiments = document.querySelector('#experimentsPage');
+
+	// checking if home is active 
+	if(home.style.opacity = '1'){
+		// checking what animation class contains
+		if(home.classList.contains('scalePop')){
+			home.classList.remove('scalePop');
+			experiments.classList.add('fromRight');
+		}else if(home.classList.contains('fromRight')){
+			home.classList.remove('fromRight');
+			experiments.classList.add('fromRight');
+		}else if(home.classList.contains('fromLeft')){
+			home.classList.remove('fromLeft');
+			experiments.classList.add('fromRight');
+		}
+	}
+	// checking if projects is active
+	if(projects.style.opacity = '1'){
+		// checking what animation class it has
+		if(projects.classList.contains('fromLeft')){
+			projects.classList.remove('fromLeft');
+			experiments.classList.add('fromRight');
+		}else if(projects.classList.contains('fromRight')){
+			projects.classList.remove('fromRight');
+			experiments.classList.add('fromRight');	
+		}
+	}
+
+
 
 }
 
