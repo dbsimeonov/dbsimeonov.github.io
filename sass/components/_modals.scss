@@ -33,10 +33,37 @@
 			ul{
 				margin-top: 3rem;
 				text-align: center;
+			    /*transform: skewX(20deg);*/
 
 				li{
-					display: inline;
-					font-size: 4rem; 
+					display: inline-block;
+					font-size: 1.4rem; 
+					padding: 4px 12px;
+					margin-bottom: 1rem ; 
+					background-color: #7f7f7f;
+					margin-right: .5rem; 
+					transform: skew(25deg);
+					
+					span{
+						display: block;
+						color: #eee;
+				    	transform: skewX(-25deg) !important;
+				    	-webkit-touch-callout: none; /* iOS Safari */
+						-webkit-user-select: none; /* Safari */
+						-khtml-user-select: none; /* Konqueror HTML */
+						-moz-user-select: none; /* Firefox */
+						-ms-user-select: none; /* Internet Explorer/Edge */
+						user-select: none; /* Non-prefixed version, currently
+						supported by Chrome and Opera */
+						cursor: default;
+					}
+
+					&:hover{
+						span{
+							transition: all .5s;
+							color: #000;
+						}
+					}
 
 				} 
 				.fa-js-square:hover{ color: #ECD120; transition: color .3s; }
@@ -44,7 +71,6 @@
 				.fa-css3-alt:hover{ color:  #E54D26;  transition: color .3s;}
 				.fa-globe:hover{ color: #26408B ; transition: color .3s;}
 
-				li+li{ margin-left: 2rem;  }
 			}
 
 			.parameters{
