@@ -45,19 +45,20 @@ const projects = e => {
 
 
 // Create the animation with css classes
-// - Onload add class for home page sliding text
-// - Onclick remove class and add class for fade-left/right
-// - after that function for adding class from left/right
-// - each calss needs to have transform/visibility/opacity
-// Modal -
-// Do it with toggling classes
+// Onload open the #homePage using .scalePop
+// Onchange remove excisting animation classes
+// Watch for which link is clicked so you
+// know which left/right class will add
+// animation classes .scalePop .fromLeft .fromRight
+// Animation for modal .modalPop
 
+
+// function for Calculating the Speed of Cursor
 let csCalculator = () => {
 	let lastmousex = -1;
 	let lastmousey = -1;
 	let prevCallTime = -1;
 	let mousetravel = 0;
-	let target = document.querySelector('#cSpeed');
 	var lastmousetime;
 	var mrefreshinterval = 500;
 
@@ -98,7 +99,6 @@ let csCalculator = () => {
 	};
 
 	document.onmousemove = handleMouseMove;
-
 	document.onmousemove = handleMouseMove;
 }
 

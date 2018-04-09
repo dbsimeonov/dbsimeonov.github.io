@@ -3,20 +3,18 @@
 <head>
 	<!-- 
 	TODO
+		- Implement Background Video
 
 		- Hover Border Bottom Effect
 		- Hover Button Effect
-		- Clean the Stylesheet on Modals
 
-		- background typing effect 
+		- Modal Closing button increase section
+		- Add Tooltip with plain CSS for changing styles
 
-		- Modal Closing button increase
-		- Add Tooltip with plain CSS
-
-	
-
+		
 		- for github check how optimized the website is
 		- try to proccess all of the webkits
+		- Clean your Stylesheet
 	 -->
 
 
@@ -48,8 +46,14 @@
 </head>
 <body>
 	<header class="header" id="header">
-		<!-- <div class="header__layout" style="background-image: url(css/images/sprite/logo.png);"> -->
-		</div><!-- /.header__layout -->
+		<div style="position: absolute; z-index: 1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-repeat: no-repeat; background-position: 50% 50%; background-image: none; filter: brightness(0.3);">
+	<video autoplay="" loop="" muted="" style="margin: auto; position: absolute; z-index: 1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; width: 100%; height: 100%;">
+		<source src="css/video/mp4.mp4" type="video/mp4">
+		<source src="css/video/webm.webm" type="video/webm">
+		<source src="css/video/ogv.ogv" type="video/ogg">
+	</video>
+	</div>
+
 		<div class="header__socials">
 			<a href="#" class="social__item"><i class="fab fa-github"></i></a>
 			<a href="#" class="social__item"><i class="fab fa-linkedin-in"></i></i></a>
@@ -60,13 +64,13 @@
 			<img src="css/images/sprite/logo.png" id="logo" onclick="goHome()" alt="logo">
 			<ul class="nav__items">
 				<li class="nav__item">
-					<a href="#" onclick="projects();">Projects</a>
+					<a href="#" onclick="projects()">Projects</a>
 				</li><!-- /.nav__item -->
 				<li class="nav__item">
 					<a href="#">Experiments</a>
 				</li><!-- /.nav__item -->
 				<li class="nav__item">
-					<a href="#" onclick="modalAbout();">Contact</a>
+					<a href="#" onclick="modalAbout()">Contact</a>
 				</li><!-- /.nav__item -->
 				<li class="nav__item">
 					<a href="#"><i class="fas fa-exchange-alt"></i></a>
@@ -78,7 +82,7 @@
 		<div class="header__content" id="homePage">
 			<h1>Daniel Simeonov</h1>
 			<h3 class="mb-md">Interactive Front-end Developer</h3>
-			<a href="#" class="btn btn--primary">About me</a>
+			<a href="#" class="btn btn--primary" onclick="modalAbout()">About me</a>
 		</div><!-- /.header__content -->
 
 		<!-- PROJECTS PAGE -->
@@ -161,7 +165,7 @@
 					<li><span>Github</span></li>
 				</ul>
 				<div class="parameters">
-					<p>SP: <span id="parameters">0.22332</span></p>
+					<p>SP: <span id="parameters">0.000000000</span></p>
 				</div><!-- /#parameters.parameters -->
 			</div><!-- /.col-6 -->
 			<div class="col-6 bg--dark">
@@ -194,7 +198,8 @@
 			gumshoe.init();
 		</script>
 	</footer><!-- /#footer.footer -->
-
+	
+	<script src="vendor/jquery.vide.min.js"></script>
 	<script src="js/functions.js"></script>
 </body>
 </html>

@@ -230,7 +230,8 @@ h6 {
     position: absolute;
     top: 50%;
     right: 2.5rem;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    z-index: 5; }
     .header .header__socials a {
       display: block;
       font-size: 2.4rem;
@@ -271,6 +272,7 @@ h6 {
     position: absolute;
     top: 35%;
     left: 10rem;
+    z-index: 5;
     opacity: 0;
     visibility: hidden;
     transform: scale(0);
@@ -303,7 +305,21 @@ h6 {
       text-transform: uppercase;
       z-index: 2;
       transform: rotateZ(-30deg);
-      margin-left: -4rem; }
+      margin-left: -4rem;
+      -webkit-touch-callout: none;
+      /* iOS Safari */
+      -webkit-user-select: none;
+      /* Safari */
+      -khtml-user-select: none;
+      /* Konqueror HTML */
+      -moz-user-select: none;
+      /* Firefox */
+      -ms-user-select: none;
+      /* Internet Explorer/Edge */
+      user-select: none;
+      /* Non-prefixed version, currently
+			supported by Chrome and Opera */
+      cursor: default; }
     .header .header__projects .cols .col-4 {
       padding: 1rem 2.5rem;
       position: relative;
