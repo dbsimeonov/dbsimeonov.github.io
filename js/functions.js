@@ -11,34 +11,35 @@ const goHome = e => {
 	const home 		= document.querySelector('#homePage');
 	const projects  = document.querySelector('#projectsPage');
 
+	// checking if projects is active
 	if(projects.style.opacity = '1'){
-		projects.style.transform = 'translateX(100%)';
-		projects.style.visibility = 'hidden';
-		projects.style.opacity = '0';
-
-		home.style.transform = 'translateX(0%)'
-		home.style.visibility = 'visible';
-		home.style.opacity = '1';
+		// checking what animation class it has
+		if(projects.classList.contains('fromLeft')){
+			projects.classList.remove('fromLeft');
+			home.classList.add('fromRight');
+		}else if(projects.classList.contains('fromRight')){
+			projects.classList.remove('fromRight');
+			home.classList.add('fromRight');	
+		}
 	}
+
 }
 
 const projects = e => {
 	const home 		= document.querySelector('#homePage');
 	const projects  = document.querySelector('#projectsPage');
-	const homePage = document.getElementById('homePage');
 
-	// Removing the content from the homePage
-	if(homePage.classList.contains('scalePop')){
-		homePage.classList.remove('scalePop');
+	// checking if home is active
+	if(home.style.opacity = '1'){
+		// checking what animation class contains
+		if(home.classList.contains('scalePop')){
+			home.classList.remove('scalePop');
+			projects.classList.add('fromRight');
+		}else if(home.classList.contains('fromRight')){
+			home.classList.remove('fromRight');
+			projects.classList.add('fromRight');
+		}
 	}
-
-	home.style.transform = 'translateX(-100%)'
-	home.style.visibility = 'hidden';
-	home.style.opacity = '0';
-
-	projects.style.transform = 'translateX(0)';
-	projects.style.visibility = 'visible';
-	projects.style.opacity = '1';
 
 }
 
@@ -104,11 +105,10 @@ let csCalculator = () => {
 
 window.onload = () => {
 	// add class for loading page(homePage )
-	const homePage = document.getElementById('homePage');
-
-	homePage.classList.add('scalePop');
+	document.querySelector('#nav').classList.add('fromTop');
+	document.getElementById('homePage').classList.add('scalePop');
 
 	csCalculator();
-
+	
 }
 

@@ -1,29 +1,47 @@
 /* ------------------------------------------------------------ *\
 	Keyframes
 \* ------------------------------------------------------------ */
-.fromTop{
-	animation: fromTop .3s;
-	visibility: visible !important;
-}
-
 @keyframes fromTop{
 	0%{
 		opacity: 0;
-		transform: translateY(%);
+		visibility: hidden;
+		transform: translateY(-70%);
 	}
 	100%{
 		opacity: 1;
-		transform: translateY(-70%);
+		visibility: visible;
+		transform: translateY(-0%);
 	} 
 
 }
 
+@keyframes fromLeft{
+	0%{
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(-100%);
+	}
+	100%{
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0%); 
+	}
+}
 
-/* ------------------------------------------------------------ *\
-	Animations triggered by js
-\* ------------------------------------------------------------ */
+@keyframes fromRight{
+	0%{
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(200%); 
+	}
+	100%{
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0%); 
+	}
+}
 
-@keyframe modalPop{
+@keyframes modalPop{
 	0%{
 		opacity: 0;
 		visibility: hidden;
@@ -35,14 +53,7 @@
 		/*transform: scale(1);*/
 	} 
 }
-.modalPop{
-	animation: modalPop 1s ease !important;
-	opacity: 1 !important;
-	visibility: visible !important; 
-}
-
-
-@keyframe scalePop{
+@keyframes scalePop{
 	0%{
 		opacity: 0; 
 		transform: scale(0);
@@ -54,6 +65,38 @@
 		visibility: visible; 
 	}
 }
+
+/* ------------------------------------------------------------ *\
+	Animations triggered by js
+\* ------------------------------------------------------------ */
+
+
+.fromTop{
+	animation: fromTop .3s;
+	opacity: 1 !important;
+	visibility: visible !important;
+}
+
+.fromLeft{
+	animation: fromLeft .3s;
+	opacity: 1  !important;
+	visibility: visible !important;
+	transform: translateX(0%) !important;  
+}
+
+.fromRight{
+	animation: fromRight .3s;
+	opacity: 1 !important;
+	visibility: visible !important;
+	transform: translateX(0%) !important;  
+}
+
+.modalPop{
+	animation: modalPop 1s ease !important;
+	opacity: 1 !important;
+	visibility: visible !important; 
+}
+
 .scalePop{
 	animation: scalePop .5s ease-in !important;
 	opacity: 1 !important;

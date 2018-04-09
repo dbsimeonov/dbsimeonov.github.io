@@ -47,12 +47,12 @@
 <body>
 	<header class="header" id="header">
 		<div style="position: absolute; z-index: 1; top: 0px; left: 0px; bottom: 0px; right: 0px; overflow: hidden; background-size: cover; background-repeat: no-repeat; background-position: 50% 50%; background-image: none; filter: brightness(0.3);">
-	<video autoplay="" loop="" muted="" style="margin: auto; position: absolute; z-index: 1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; width: 100%; height: 100%;">
-		<source src="css/video/mp4.mp4" type="video/mp4">
-		<source src="css/video/webm.webm" type="video/webm">
-		<source src="css/video/ogv.ogv" type="video/ogg">
-	</video>
-	</div>
+			<video autoplay="" loop="" muted="" style="margin: auto; position: absolute; z-index: 1; top: 50%; left: 50%; transform: translate(-50%, -50%); visibility: visible; width: auto; height: auto;">
+				<source src="css/video/mp4.mp4" type="video/mp4">
+				<source src="css/video/webm.webm" type="video/webm">
+				<source src="css/video/ogv.ogv" type="video/ogg">
+			</video>
+		</div>
 
 		<div class="header__socials">
 			<a href="#" class="social__item"><i class="fab fa-github"></i></a>
@@ -60,7 +60,7 @@
 			<a href="#" class="social__item"><i class="fab fa-node-js"></i></i></a>
 			<a href="#" class="social__item"><i class="fab fa-facebook-f"></i></i></a>
 		</div><!-- /.header__socials -->
-		<nav class="nav">
+		<nav class="nav" id="nav">
 			<img src="css/images/sprite/logo.png" id="logo" onclick="goHome()" alt="logo">
 			<ul class="nav__items">
 				<li class="nav__item">
