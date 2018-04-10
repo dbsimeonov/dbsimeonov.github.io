@@ -76,11 +76,18 @@
 		transform: scale(1);
 	}
 }
+@keyframes opacity{
+	0%{
+		opacity: 0; 
+	}
+	100%{
+		opacity: 1; 
+	}
+}
 
 /* ------------------------------------------------------------ *\
 	Animations triggered by js
 \* ------------------------------------------------------------ */
-
 
 .fromTop{
 	animation: fromTop .3s;
@@ -122,6 +129,10 @@
 	transform: scaleX(-1);
 	filter: FlipH;
 	-ms-filter: "FlipH";
-	animation: fakeZoom .25s;
+	animation: fakeZoom .5s;
 	transition: all .5s;
+}
+.opacity{
+	opacity: 1 !important;  
+	animation: opacity .5s !important;
 }

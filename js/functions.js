@@ -173,7 +173,7 @@ window.onload = () => {
 	// add class for loading page(homePage )
 	document.querySelector('#nav').classList.add('fromTop');
 	document.getElementById('homePage').classList.add('scalePop');
-
+	document.querySelector('.header__socials').classList.add('opacity');
 	csCalculator();
 	
 }

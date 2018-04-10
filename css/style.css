@@ -58,6 +58,12 @@
   100% {
     transform: scale(1); } }
 
+@keyframes opacity {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 /* ------------------------------------------------------------ *	Animations triggered by js
 \* ------------------------------------------------------------ */
 .fromTop {
@@ -95,8 +101,12 @@
   transform: scaleX(-1);
   filter: FlipH;
   -ms-filter: "FlipH";
-  animation: fakeZoom .25s;
+  animation: fakeZoom .5s;
   transition: all .5s; }
+
+.opacity {
+  opacity: 1 !important;
+  animation: opacity .5s !important; }
 
 /* ------------------------------------------------------------ *	Universal Helpers
 \* ------------------------------------------------------------ */
@@ -285,7 +295,8 @@ h6 {
     top: 50%;
     right: 2.5rem;
     transform: translateY(-50%);
-    z-index: 5; }
+    z-index: 5;
+    opacity: 0; }
     .header .header__socials a {
       display: block;
       font-size: 2.4rem;
