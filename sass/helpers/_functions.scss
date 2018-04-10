@@ -65,6 +65,17 @@
 		visibility: visible; 
 	}
 }
+@keyframes fakeZoom{
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
 
 /* ------------------------------------------------------------ *\
 	Animations triggered by js
@@ -102,4 +113,15 @@
 	opacity: 1 !important;
 	visibility: visible !important;
 	transform: scale(1) !important;
+}
+
+.flipVideo{
+	-moz-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	transform: scaleX(-1);
+	filter: FlipH;
+	-ms-filter: "FlipH";
+	animation: fakeZoom .25s;
+	transition: all .5s;
 }

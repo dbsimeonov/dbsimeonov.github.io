@@ -6,6 +6,12 @@ const modalAbout = () => {
 	// Using ternary operator to check if its already oppened
 	target.classList.contains('modalPop') ? target.classList.remove('modalPop') : target.classList.add('modalPop');
 }
+const flipVideo = () => {
+	// const button = document.querySelector('#flipVideo');
+	const target = document.querySelector('#video');
+
+	target.classList.toggle('flipVideo');
+}
 
 const goHome = e => {
 	const home 		  = document.querySelector('#homePage');
@@ -20,7 +26,7 @@ const goHome = e => {
 		}else if(projects.classList.contains('fromRight')){
 			projects.classList.remove('fromRight');
 			home.classList.add('fromLeft');	
-		}
+		} 
 	}
 
 	// check if experiments is active
@@ -90,6 +96,7 @@ const experiments = e => {
 	if(projects.style.opacity = '1'){
 		// checking what animation class it has
 		if(projects.classList.contains('fromLeft')){
+		
 			projects.classList.remove('fromLeft');
 			experiments.classList.add('fromRight');
 		}else if(projects.classList.contains('fromRight')){
