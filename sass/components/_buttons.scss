@@ -1,14 +1,17 @@
 
 .btn{
+	display: inline-block;
 	font-size: 1.7rem;
 	letter-spacing: 2px;
 	text-transform: capitalize; 
 	text-align: center;
+	vertical-align: center;
 	font-family: 'Cabin', sans-serif;
 	color: $color-text;
 	padding: 1.2rem 2rem;
 	position: relative;
-
+	overflow: hidden;
+	transition: all .3s;
 
 	.arrow{
 		position: absolute;
@@ -24,9 +27,20 @@
 	background: linear-gradient(270deg,#f06449,#ef3636);
 	
 	&:hover{
-		background: linear-gradient(270deg,#235aa6,#101b3b);
+		.btn-before{ 
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(-90%);
 		transition: all ease .5s;
+		}
+		&:after{
+			opacity: 1;
+			visibility: visible;
+			transform: translateX(100%);
+			transition: all ease .5s;
+		}
 	}
+
 }
 
 .btn--sm{
@@ -34,3 +48,12 @@
 	padding: .8rem 1.5rem
 }
 
+
+.btn-before{
+	opacity: 0; visibility: hidden;
+	transform: rotateZ(30deg) translateX(0%);
+	height: 50rem; width: 20px;
+	background-color: #101b3b;
+	z-index: 6;
+	position: absolute; top: -50%; left:0; 
+}

@@ -58,12 +58,15 @@
 					color: $color-links;
 					font-size: 1.8rem; 
 					text-transform: capitalize;
-					transition: all .3s;
+					transition: color .3s, border .5s ease;
+					padding-bottom: 2px;
+					border-bottom: 3px solid transparent; 
 					
 
 					/*  add the hover border effect  */
 					&:hover{
 						color: $color-white;
+						border-bottom-color: $color-primary ; 
 					}
 				}
 			}
@@ -158,8 +161,20 @@
 
 			.experiment__box{
 				height: 40rem; width: 33%;
-				cursor: pointer;
+				/*cursor: pointer;*/
 				padding: 0 2rem;
+				position: relative;
+				overflow: hidden;
+				transition: all .3s;
+				&:hover{
+					.box__text-extended{
+						visibility: visible; opacity: 1; 
+						transform: translateY(0%);
+						padding: 6rem 4rem;
+						transition: all 1s ease;
+						height: 40rem;
+					}
+				}
 
 				.box__img{
 					background-position: center;
@@ -167,12 +182,28 @@
 					background-repeat: no-repeat;
 					height: 100%;
 					width: 100%;
+					position: relative; 
 				}
 				.box__text{
 					background-color: $color-selection ;
 					padding: 1.5rem; text-align: center;
-					color: $color-text;
 					font-size: 1.7rem; 
+					position: absolute;
+					bottom: 0; left: 0; right: 0;
+					z-index: 2;
+					a{ color: $color-text; } 
+				}
+				.box__text-extended{
+					opacity: 0; visibility: hidden; 
+					background-color: rgba($color-selection, .7);
+					color: $color-text;
+					font-size: 1.4rem;
+					padding: 2rem;
+					text-align: center; 
+					vertical-align: center;
+					position: absolute;
+					top: 0; left: 0;
+					transform: translateY(-100%);
 				}
 			}
 		}
