@@ -96,12 +96,11 @@ const experiments = e => {
 	if(projects.style.opacity = '1'){
 		// checking what animation class it has
 		if(projects.classList.contains('fromLeft')){
-		
 			projects.classList.remove('fromLeft');
 			experiments.classList.add('fromRight');
 		}else if(projects.classList.contains('fromRight')){
 			projects.classList.remove('fromRight');
-			experiments.classList.add('fromRight');	
+			experiments.classList.add('fromLeft');	
 		}
 	}
 

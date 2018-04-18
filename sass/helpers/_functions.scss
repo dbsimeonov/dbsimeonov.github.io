@@ -84,11 +84,28 @@
 		opacity: 1; 
 	}
 }
+@keyframes toLeft{
+	0%{
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0%); 
+	}
+	100%{
+		opacity: 0;
+		visibility: hidden;
+		transform: translateX(-200%); 
+	}
+}
 
 /* ------------------------------------------------------------ *\
 	Animations triggered by js
 \* ------------------------------------------------------------ */
-
+.toLeft{
+	animation: toLeft .3s;
+	opacity: 0 !important;
+	visibility: hidden !important;
+	transform: translateX(-200%) !important;  
+}
 .fromTop{
 	animation: fromTop .3s;
 	opacity: 1 !important;

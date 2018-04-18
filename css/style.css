@@ -64,8 +64,24 @@
   100% {
     opacity: 1; } }
 
+@keyframes toLeft {
+  0% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0%); }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-200%); } }
+
 /* ------------------------------------------------------------ *	Animations triggered by js
 \* ------------------------------------------------------------ */
+.toLeft {
+  animation: toLeft .3s;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transform: translateX(-200%) !important; }
+
 .fromTop {
   animation: fromTop .3s;
   opacity: 1 !important;
@@ -441,7 +457,7 @@ h6 {
           position: relative; }
         .header .header__experiments .experiments__content .experiment__box .box__text {
           background-color: #1c1d25;
-          padding: 1.5rem;
+          padding: 1.5rem 0;
           text-align: center;
           font-size: 1.7rem;
           position: absolute;
@@ -847,11 +863,31 @@ h6 {
       #aboutme .cols .col-6 .parameters p {
         font-size: 1.3rem; }
   #aboutme .cols .bg--white {
-    text-align: justify; }
+    text-align: justify;
+    position: relative;
+    overflow: hidden; }
+    #aboutme .cols .bg--white .background-text {
+      position: absolute;
+      top: -5rem;
+      left: 7rem;
+      font-size: 20rem;
+      font-weight: 700;
+      opacity: .1; }
   #aboutme .cols .bg--dark {
-    background-color: rgba(28, 29, 37, 0.985); }
+    background-color: rgba(28, 29, 37, 0.985);
+    position: relative;
+    overflow: hidden; }
+    #aboutme .cols .bg--dark .background-text {
+      color: #dadada;
+      position: absolute;
+      bottom: -2rem;
+      left: -2rem;
+      font-size: 17rem;
+      font-weight: 700;
+      opacity: .1; }
     #aboutme .cols .bg--dark form {
-      margin-bottom: 4rem; }
+      margin-bottom: 4rem;
+      z-index: 3; }
       #aboutme .cols .bg--dark form label {
         color: #dadada;
         letter-spacing: 2px;

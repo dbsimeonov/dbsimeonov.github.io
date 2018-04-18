@@ -82,13 +82,35 @@
 
 		.bg--white{
 			text-align: justify;
+			position: relative;
+			overflow: hidden; 
+			.background-text{
+				position: absolute; 
+				top: -5rem; left: 7rem;
+				font-size: 20rem;
+				font-weight: 700;
+				opacity: .1;   
+			}
 
+		}
+		.bg--dark, .bg--white{
+			
 		}
 		.bg--dark{
 			background-color:  rgba(28,29,37,.985);
-
+			position: relative;
+			overflow: hidden;
+			.background-text{
+				color: $color-text;
+				position: absolute; 
+				bottom: -2rem; left: -2rem;
+				font-size: 17rem;
+				font-weight: 700;
+				opacity: .1;   
+			}
 			form{
 				margin-bottom: 4rem; 
+				z-index: 3; 
 				label{
 					color: $color-text;
 					letter-spacing: 2px;
@@ -101,7 +123,7 @@
 					margin-bottom: 2rem; 
 				}
 				input,
-				textarea{
+				textarea{ 
 					width: 100%;
 					display: block;
 					background-color: transparent;
