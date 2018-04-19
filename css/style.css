@@ -232,6 +232,10 @@ body {
   box-sizing: border-box;
   font-family: Helvetica,Arial,sans-serif; }
 
+body, html {
+  overflow-y: hidden;
+  overflow-x: hidden; }
+
 ul {
   list-style: none; }
 
@@ -758,33 +762,17 @@ h6 {
     transform: translate(8%, -50%); }
 
 .btn--primary {
-  background: linear-gradient(270deg, #f06449, #ef3636); }
-  .btn--primary:hover .btn-before {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-90%);
-    transition: all ease .5s; }
-  .btn--primary:hover:after {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(100%);
-    transition: all ease .5s; }
+  padding-left: 0 !important;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.3rem;
+  background: -webkit-linear-gradient(270deg, #f06449, #ef3636);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .btn--sm {
   font-size: 1.2rem;
   padding: .8rem 1.5rem; }
-
-.btn-before {
-  opacity: 0;
-  visibility: hidden;
-  transform: rotateZ(30deg) translateX(0%);
-  height: 50rem;
-  width: 20px;
-  background-color: #101b3b;
-  z-index: 6;
-  position: absolute;
-  top: -50%;
-  left: 0; }
 
 /*  Modals  */
 .modal-aboutme {
@@ -905,11 +893,12 @@ h6 {
         border: none;
         outline: none;
         border-bottom: 2px solid silver;
+        padding: 8px 5px;
         color: #dadada;
         font-size: 1.2rem;
-        padding: 8px 5px;
         font-weight: 300;
         font-family: 'Poppins', sans-serif;
+        z-index: 6;
         letter-spacing: 2px;
         transition: all ease-in .5s; }
         #aboutme .cols .bg--dark form input:focus,

@@ -30,6 +30,10 @@ body{
   	box-sizing: border-box;
   	font-family: Helvetica,Arial,sans-serif;
 }
+body,html{
+	overflow-y: hidden;
+  	overflow-x: hidden;
+}
 
 ul{
 	list-style: none;
