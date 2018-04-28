@@ -14,18 +14,18 @@ h6 {
 
 h1{
 	font-size: 6.5rem; 
-	color: $color-white;
+	color: #fff;
 }
 h2{
 	font-size: 3rem;
 	letter-spacing: 3px;
-	color: $color-text; 
+	color: #fff; 
 	text-transform: uppercase;
 }
 h3{
 	font-size: 2rem; 
 	font-style: italic;
-	color: $color-white;
+	color: #fff;
 	font-weight: 100;
 	letter-spacing: 2px; 
 }
@@ -54,7 +54,7 @@ h6{
 .modal-aboutme{
 	font-size: 1.5rem;
 	font-family: 'Poppins', sans-serif;
-	color: $color-selection;
+	
 	p{ margin-bottom: .5rem;  }
 	.sub-heading{
 		font-size: 1.2rem; 
@@ -63,6 +63,5 @@ h6{
 		font-weight: 300;
 		margin-bottom: 2rem;  
 	}
-	
 }
 

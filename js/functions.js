@@ -176,5 +176,4 @@ window.onload = () => {
 	csCalculator();
 	
 }
-
 */
