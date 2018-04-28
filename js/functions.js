@@ -1,126 +1,24 @@
-/*//  Functions
-const modalAbout = () => {
-	// Declaring variables about the modal
-	const target  = document.querySelector('#aboutme');
-	const content = document.querySelector('.header__content');
-	// Using ternary operator to check if its already oppened
-	target.classList.contains('modalPop') ? target.classList.remove('modalPop') : target.classList.add('modalPop');
+const openModal = () =>{
+	const target = document.querySelector('#aboutme');
+	const bgWhite = document.querySelector('#bgWhite');
+	const bgDark = document.querySelector('#bgDark');
+
+	target.classList.add('modal-open');
+	bgDark.style.transform = 'translateY(0%)';
+	bgWhite.style.transform = 'translateY(0%)';
 }
-const flipVideo = () => {
-	// const button = document.querySelector('#flipVideo');
-	const target = document.querySelector('#video');
+const closeModal = () => {
+	const target = document.querySelector('#aboutme');
+	const bgWhite = document.querySelector('#bgWhite');
+	const bgDark = document.querySelector('#bgDark');
 
-	target.classList.toggle('flipVideo');
-}
-
-const goHome = e => {
-	const home 		  = document.querySelector('#homePage');
-	const projects    = document.querySelector('#projectsPage');
-	const experiments = document.querySelector('#experimentsPage');
-	// checking if projects is active
-	if(projects.style.opacity = '1'){
-		// checking what animation class it has
-		if(projects.classList.contains('fromLeft')){
-			projects.classList.remove('fromLeft');
-			home.classList.add('fromLeft');
-		}else if(projects.classList.contains('fromRight')){
-			projects.classList.remove('fromRight');
-			home.classList.add('fromLeft');	
-		} 
-	}
-
-	// check if experiments is active
-	if(experiments.style.opacity = '1'){
-		if(experiments.classList.contains('fromLeft')){
-			experiments.classList.remove('fromLeft');
-			home.classList.add('fromLeft');
-		}else if(experiments.classList.contains('fromRight')){
-			experiments.classList.remove('fromRight');
-			home.classList.add('fromLeft');
-		}
-	}
-
-}
-
-const projects = e => {
-	const home 		  = document.querySelector('#homePage');
-	const projects    = document.querySelector('#projectsPage');
-	const experiments = document.querySelector('#experimentsPage');
-	// checking if home is active
-	if(home.style.opacity = '1'){
-		// checking what animation class contains
-		if(home.classList.contains('scalePop')){
-			home.classList.remove('scalePop');
-			projects.classList.add('fromRight');
-		}else if(home.classList.contains('fromRight')){
-			home.classList.remove('fromRight');
-			projects.classList.add('fromRight');
-		}else if(home.classList.contains('fromLeft')){
-			home.classList.remove('fromLeft');
-			projects.classList.add('fromRight');
-		}
-	}
-	// check if experiments is active
-	if(experiments.style.opacity = '1'){
-		if(experiments.classList.contains('fromLeft')){
-			experiments.classList.remove('fromLeft');
-			projects.classList.add('fromLeft');
-		}else if(experiments.classList.contains('fromRight')){
-			experiments.classList.remove('fromRight');
-			projects.classList.add('fromLeft');
-		}
-	}
-
-}
-
-const experiments = e => {
-	const home 		  = document.querySelector('#homePage');
-	const projects    = document.querySelector('#projectsPage');
-	const experiments = document.querySelector('#experimentsPage');
-
-	// checking if home is active 
-	if(home.style.opacity = '1'){
-		// checking what animation class contains
-		if(home.classList.contains('scalePop')){
-			home.classList.remove('scalePop');
-			experiments.classList.add('fromRight');
-		}else if(home.classList.contains('fromRight')){
-			home.classList.remove('fromRight');
-			experiments.classList.add('fromRight');
-		}else if(home.classList.contains('fromLeft')){
-			home.classList.remove('fromLeft');
-			experiments.classList.add('fromRight');
-		}
-	}
-	// checking if projects is active
-	if(projects.style.opacity = '1'){
-		// checking what animation class it has
-		if(projects.classList.contains('fromLeft')){
-			projects.classList.remove('fromLeft');
-			experiments.classList.add('fromRight');
-		}else if(projects.classList.contains('fromRight')){
-			projects.classList.remove('fromRight');
-			experiments.classList.add('fromLeft');	
-		}
-	}
-
-
-
+	target.classList.remove('modal-open');
+	bgDark.style.transform = 'translateY(-200%)';
+	bgWhite.style.transform = 'translateY(200%)';
 }
 
 
-
-// Create the animation with css classes
-// Onload open the #homePage using .scalePop
-// Onchange remove excisting animation classes
-// Watch for which link is clicked so you
-// know which left/right class will add
-// animation classes .scalePop .fromLeft .fromRight
-// Animation for modal .modalPop
-
-
-// function for Calculating the Speed of Cursor
-let csCalculator = () => {
+let calculateSpeed = () => {
 	let lastmousex = -1;
 	let lastmousey = -1;
 	let prevCallTime = -1;
@@ -168,12 +66,4 @@ let csCalculator = () => {
 	document.onmousemove = handleMouseMove;
 }
 
-window.onload = () => {
-	// add class for loading page(homePage )
-	document.querySelector('#nav').classList.add('fromTop');
-	document.getElementById('homePage').classList.add('scalePop');
-	document.querySelector('.header__socials').classList.add('opacity');
-	csCalculator();
-	
-}
-*/
+calculateSpeed();

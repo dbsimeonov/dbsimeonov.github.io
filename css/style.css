@@ -1060,3 +1060,169 @@ h6 {
     font-size: 0.75em; }
     .footer .footer-copy a {
       color: #f3f3f3; }
+
+/*  Modals  */
+.modal-aboutme {
+  visibility: hidden;
+  opacity: 0; }
+
+.modal-open {
+  visibility: visible !important;
+  opacity: 1 !important; }
+
+#aboutme {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  text-align: center;
+  /*background-color: rgba(28,29,37,.985);*/
+  z-index: 1000;
+  box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.55);
+  overflow: hidden;
+  /*transform: translateY(70%);*/
+  transition: all ease .5s;
+  display: flex; }
+  #aboutme .bg--white,
+  #aboutme .bg--dark {
+    width: 50%;
+    padding: 10rem 8rem 10rem 10rem;
+    text-align: left; }
+    #aboutme .bg--white .underlined,
+    #aboutme .bg--dark .underlined {
+      color: #f06449;
+      text-decoration: none;
+      font-weight: 500; }
+  #aboutme .bg--white {
+    text-align: justify;
+    position: relative;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    /*Animation*/
+    transform: translateY(200%);
+    transition: transform .5s ease; }
+    #aboutme .bg--white .background-text {
+      position: absolute;
+      top: -5rem;
+      left: 7rem;
+      font-size: 20rem;
+      font-weight: 700;
+      opacity: .1; }
+    #aboutme .bg--white p {
+      font-weight: 300;
+      line-height: 1.3125em;
+      font-size: 1.025em; }
+    #aboutme .bg--white ul {
+      margin-top: 40px;
+      text-align: center;
+      /*transform: skewX(20deg);*/ }
+      #aboutme .bg--white ul li {
+        display: inline-block;
+        font-size: 1.4rem;
+        padding: 4px 12px;
+        margin-bottom: 1rem;
+        background-color: #7f7f7f;
+        margin-right: .5rem;
+        transform: skew(25deg); }
+        #aboutme .bg--white ul li span {
+          display: block;
+          color: #eee;
+          transform: skewX(-25deg) !important;
+          -webkit-touch-callout: none;
+          /* iOS Safari */
+          -webkit-user-select: none;
+          /* Safari */
+          -khtml-user-select: none;
+          /* Konqueror HTML */
+          -moz-user-select: none;
+          /* Firefox */
+          -ms-user-select: none;
+          /* Internet Explorer/Edge */
+          user-select: none;
+          /* Non-prefixed version, currently
+						supported by Chrome and Opera */
+          cursor: default; }
+        #aboutme .bg--white ul li:hover span {
+          transition: all .5s;
+          color: #000; }
+    #aboutme .bg--white .parameters {
+      position: absolute;
+      bottom: 2rem;
+      left: 6.5rem; }
+      #aboutme .bg--white .parameters p {
+        font-size: 1.3rem; }
+  #aboutme .bg--dark {
+    background-color: #1c1d25;
+    color: #dadada;
+    position: relative;
+    overflow: hidden;
+    /*Animation*/
+    transform: translateY(-200%);
+    transition: transform .5s ease; }
+    #aboutme .bg--dark h6 {
+      margin-bottom: 15px; }
+    #aboutme .bg--dark .background-text {
+      color: #fff;
+      position: absolute;
+      bottom: -2rem;
+      left: -2rem;
+      font-size: 17rem;
+      font-weight: 700;
+      opacity: .1; }
+    #aboutme .bg--dark form {
+      margin-bottom: 4rem;
+      z-index: 3; }
+      #aboutme .bg--dark form label {
+        color: #dadada;
+        letter-spacing: 2px;
+        font-size: 1.1rem;
+        /*margin-top: 1rem; */
+        padding-left: .5rem; }
+      #aboutme .bg--dark form input {
+        margin-bottom: 2rem; }
+      #aboutme .bg--dark form input,
+      #aboutme .bg--dark form textarea {
+        width: 100%;
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid silver;
+        padding: 8px 5px;
+        color: #f06449;
+        font-size: 1.2rem;
+        font-weight: 300;
+        z-index: 6;
+        letter-spacing: 2px;
+        transition: all ease-in .5s; }
+        #aboutme .bg--dark form input:focus,
+        #aboutme .bg--dark form textarea:focus {
+          border-color: #f06449; }
+      #aboutme .bg--dark form textarea {
+        resize: none; }
+    #aboutme .bg--dark .modal-close {
+      position: absolute;
+      top: 4rem;
+      right: 4rem;
+      cursor: pointer;
+      width: 38px;
+      height: 38px; }
+      #aboutme .bg--dark .modal-close:hover span {
+        background-color: #f06449; }
+      #aboutme .bg--dark .modal-close span {
+        position: relative;
+        left: 0;
+        display: block;
+        width: 3.5rem;
+        height: 3px;
+        margin-bottom: 7px;
+        background-color: #e3d8d3;
+        border-radius: 4px;
+        transition: all .3s; }
+      #aboutme .bg--dark .modal-close #close-one {
+        transform: rotate(45deg);
+        top: 43px; }
+      #aboutme .bg--dark .modal-close #close-two {
+        transform: rotate(-45deg);
+        top: 33px; }
