@@ -1,4 +1,4 @@
-/*  Header  */
+/* Header
 .header{
 	height: 102vh; width: 100%;
 	padding: 0rem 5rem;
@@ -36,7 +36,7 @@
 		position: relative; 
 		font-family: 'Poppins', sans-serif;
 
-		/* test */
+		test
 		opacity: 0;
 		visibility: hidden;
 		transform: translateX(0%); 
@@ -63,7 +63,7 @@
 					border-bottom: 3px solid transparent; 
 					
 
-					/*  add the hover border effect  */
+					add the hover border effect
 					&:hover{
 						color: $color-white;
 						border-bottom-color: $color-primary ; 
@@ -92,7 +92,7 @@
 		padding-right: 10rem; 
 		width: 100%;
 
-		/*  For Onclick Function  */
+		For Onclick Function
 		transform: translateX(100%);
 		opacity: 0;
 		visibility: hidden;  
@@ -101,8 +101,8 @@
 
 		h2{
 			margin-top: -10rem; 
-			-ms-transform: rotate(-30deg); /* IE 9 */
-			-webkit-transform: rotate(-30deg); /* Safari */
+			-ms-transform: rotate(-30deg); IE 9
+			-webkit-transform: rotate(-30deg); Safari
 			transform: rotate(-30deg);
 		}
 		.cols{ 
@@ -131,15 +131,15 @@
 					justify-content: center; align-items: center;
 					
 					transition: .5s ease;
-					visibility: hidden; /*  for the hover effect  */
-					opacity: 0; /*  for the hover effect  */
+					visibility: hidden; for the hover effect
+					opacity: 0; for the hover effect
 					
 					span{ color: $color-text;  font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;   }
 				}
 			}
 		}
 	}
-	/* Experiments Page*/
+	Experiments Page
 	.header__experiments{
 		position: absolute;
 		top: 24%; left: 0rem;
@@ -148,7 +148,7 @@
 		padding-right: 10rem; 
 		width: 100%;
 
-		/*  For Onclick Function  */
+		For Onclick Function
 		transform: translateX(100%);
 		opacity: 0;
 		visibility: hidden;  
@@ -161,7 +161,7 @@
 
 			.experiment__box{
 				height: 40rem; width: 33%;
-				/*cursor: pointer;*/
+				cursor: pointer;
 				padding: 0 2rem;
 				position: relative;
 				overflow: hidden;
@@ -219,13 +219,13 @@
 		z-index: 2;
 		transform: rotateZ(-30deg);
 	    margin-left: 2rem;
-		-webkit-touch-callout: none; /* iOS Safari */
-		-webkit-user-select: none; /* Safari */
-		-khtml-user-select: none; /* Konqueror HTML */
-		-moz-user-select: none; /* Firefox */
-		-ms-user-select: none; /* Internet Explorer/Edge */
-		user-select: none; /* Non-prefixed version, currently
-		supported by Chrome and Opera */
+		-webkit-touch-callout: none; iOS Safari
+		-webkit-user-select: none; Safari
+		-khtml-user-select: none; Konqueror HTML
+		-moz-user-select: none; Firefox
+		-ms-user-select: none; Internet Explorer/Edge
+		user-select: none; Non-prefixed version, currently
+		supported by Chrome and Opera
 		cursor: default;
 	}
 
@@ -233,3 +233,16 @@
 
 
 
+ */
+
+ .header {
+ 	position: absolute;
+ 	z-index: 1000; 
+ 	left: 0;
+ 	top: 0;
+ 	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 30px 0 20px;
+ }

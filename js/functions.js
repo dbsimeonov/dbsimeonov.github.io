@@ -1,4 +1,4 @@
-//  Functions
+/*//  Functions
 const modalAbout = () => {
 	// Declaring variables about the modal
 	const target  = document.querySelector('#aboutme');
@@ -177,3 +177,4 @@ window.onload = () => {
 	
 }
 
+*/

@@ -1,7 +1,7 @@
 *,
-*::after,
-*::before{
-	margin: 0; padding: 0; box-sizing: inherit;
+*:after,
+*:before{
+	margin: 0; padding: 0; box-sizing: inherit; box-sizing: border-box;
 }
 *:focus {
     outline: none;
@@ -27,12 +27,8 @@ a {
 }
 
 body{
-  	box-sizing: border-box;
-  	font-family: Helvetica,Arial,sans-serif;
-}
-body,html{
-	overflow-y: hidden;
-  	overflow-x: hidden;
+  	font-family: 'Open Sans', sans-serif;
+  	background: #fff;
 }
 
 ul{
