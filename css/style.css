@@ -88,242 +88,6 @@ h6 {
     font-weight: 300;
     margin-bottom: 2rem; }
 
-/* Header
-.header{
-	height: 102vh; width: 100%;
-	padding: 0rem 5rem;
-	position: relative;
-	top: 0; right: 0; 
-	background-color: $color-selection;
-
-	.header__socials{
-		position: absolute;
-		top: 50%;  right: 2.5rem;
-		transform: translateY(-50%);
-		z-index: 5; 
-		opacity: 0; 
-
-		a{ 
-			display: block; 
-			font-size: 2.4rem; 
-			color: $color-links;
-			transition: all .3s;
-
-			&:hover{
-				color: $color-white;
-			}
-		}
-		
-		a+a{ margin-top: 3rem;  }
-	}
-
-	.nav{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-top: -1rem; 
-		z-index: 10; 
-		position: relative; 
-		font-family: 'Poppins', sans-serif;
-
-		test
-		opacity: 0;
-		visibility: hidden;
-		transform: translateX(0%); 
-
-
-		img{
-			height: 13rem;
-			width: 13rem;
-			margin-top: 0; 
-			cursor: pointer;
-			filter: grayscale(1) brightness(1.3);
-		}
-		.nav__items{
-			
-			.nav__item{
-				display: inline;
-
-				a{
-					color: $color-links;
-					font-size: 1.8rem; 
-					text-transform: capitalize;
-					transition: color .3s, border .5s ease;
-					padding-bottom: 2px;
-					border-bottom: 3px solid transparent; 
-					
-
-					add the hover border effect
-					&:hover{
-						color: $color-white;
-						border-bottom-color: $color-primary ; 
-					}
-				}
-			}
-			.nav__item+.nav__item{
-				margin-left: 2rem; 
-			}
-		}
-	}
-
-	.header__content{
-		position: absolute;
-		top: 35%; left: 10rem;
-		z-index: 5; 
-		opacity: 0; visibility: hidden; transform: scale(0);
-		transition:  ease .4s;
-	}
-
-	.header__projects{
-		position: absolute;
-		top: 24%; left: 0rem;
-		z-index: 5; 
-		padding-left: 10rem;
-		padding-right: 10rem; 
-		width: 100%;
-
-		For Onclick Function
-		transform: translateX(100%);
-		opacity: 0;
-		visibility: hidden;  
-
-		transition: all .5s;
-
-		h2{
-			margin-top: -10rem; 
-			-ms-transform: rotate(-30deg); IE 9
-			-webkit-transform: rotate(-30deg); Safari
-			transform: rotate(-30deg);
-		}
-		.cols{ 
-			
-			.col-4{
-				padding: 1rem 2.5rem;
-				position: relative; 
-				overflow: hidden;
-				
-				&:hover .col-4-text{
-					visibility: visible;
-					opacity: 1;
-				}
-				&:hover img{
-					opacity: 0.7; 
-				}
-				img{
-					width: 100% !important; 
-					height: 100% !important;
-				}
-				.col-4-text{
-					position: absolute;
-					top: 70%; left: 50%;
-					transform: translate(-50%, -70%);
-					display: flex; flex-direction: column; 
-					justify-content: center; align-items: center;
-					
-					transition: .5s ease;
-					visibility: hidden; for the hover effect
-					opacity: 0; for the hover effect
-					
-					span{ color: $color-text;  font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem;   }
-				}
-			}
-		}
-	}
-	Experiments Page
-	.header__experiments{
-		position: absolute;
-		top: 24%; left: 0rem;
-		z-index: 5; 
-		padding-left: 10rem;
-		padding-right: 10rem; 
-		width: 100%;
-
-		For Onclick Function
-		transform: translateX(100%);
-		opacity: 0;
-		visibility: hidden;  
-
-		transition:  ease .4s;
-
-		.experiments__content{
-			display: flex; width: 100%; height: auto;
-			font-family: 'Poppins', sans-serif;
-
-			.experiment__box{
-				height: 40rem; width: 33%;
-				cursor: pointer;
-				padding: 0 2rem;
-				position: relative;
-				overflow: hidden;
-				transition: all .3s;
-				&:hover{
-					.box__text-extended{
-						visibility: visible; opacity: 1; 
-						transform: translateY(0%);
-						padding: 6rem 4rem;
-						transition: all 1s ease;
-						height: 40rem;
-					}
-				}
-
-				.box__img{
-					background-position: center;
-					background-size: cover;
-					background-repeat: no-repeat;
-					height: 100%;
-					width: 100%;
-					position: relative; 
-				}
-				.box__text{
-					background-color: $color-selection ;
-					padding: 1.5rem 0; text-align: center;
-					font-size: 1.7rem; 
-					position: absolute;
-					bottom: 0; left: 0; right: 0;
-					z-index: 2;
-					a{ color: $color-text; } 
-				}
-				.box__text-extended{
-					opacity: 0; visibility: hidden; 
-					background-color: rgba($color-selection, .7);
-					color: $color-text;
-					font-size: 1.4rem;
-					padding: 2rem;
-					text-align: center; 
-					vertical-align: center;
-					position: absolute;
-					top: 0; left: 0;
-					transform: translateY(-100%);
-				}
-			}
-		}
-	}
-	.section--logo{
-		position: absolute;
-		top: 0; left: 0;
-		font-size: 3rem;
-		font-weight: 700;
-		letter-spacing: 3px; 
-		color: $color-text; 
-		text-transform: uppercase;
-		z-index: 2;
-		transform: rotateZ(-30deg);
-	    margin-left: 2rem;
-		-webkit-touch-callout: none; iOS Safari
-		-webkit-user-select: none; Safari
-		-khtml-user-select: none; Konqueror HTML
-		-moz-user-select: none; Firefox
-		-ms-user-select: none; Internet Explorer/Edge
-		user-select: none; Non-prefixed version, currently
-		supported by Chrome and Opera
-		cursor: default;
-	}
-
-}
-
-
-
- */
 .header {
   position: absolute;
   z-index: 1000;
@@ -532,6 +296,14 @@ h6 {
   padding-right: 15px;
   padding-left: 15px; }
 
+@media only screen and (max-width: 41.25em) {
+  .container {
+    padding: 0 30px !important; } }
+
+@media only screen and (max-width: 25em) {
+  .container {
+    padding: 0 35px !important; } }
+
 /* ------------------------------------------------------------ *	Btn
 \* ------------------------------------------------------------ */
 .btn {
@@ -639,7 +411,7 @@ h6 {
   width: 80%;
   opacity: 1;
   height: 480px;
-  background-color: #1c1d25;
+  /*background-color:#1c1d25;*/
   position: relative;
   box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.45);
   margin-left: auto;
@@ -727,6 +499,7 @@ h6 {
   z-index: 101; }
 
 .case-studies-list .case-study .case-study-mask-number {
+  font-size: 16em;
   display: none; }
 
 .case-studies-list .case-study .case-study-text-section {
@@ -866,10 +639,19 @@ h6 {
     width: 95%;
     height: 290px; }
   .case-studies-list .case-study .case-study-title {
-    font-size: 1.125em; }
+    font-size: 2.725em; }
+  .case-studies-list .case-study .case-study-subtitle {
+    font-size: 1.725em;
+    font-weight: 100;
+    opacity: .8; }
   .case-studies-list .case-study .case-study-text-section {
     left: 25px;
-    bottom: 50px; } }
+    bottom: 50px; }
+  .case-studies-list .case-study .btn {
+    font-size: 0.9125em;
+    padding: 12px 20px; }
+    .case-studies-list .case-study .btn .btn-icon {
+      top: 1px; } }
 
 /* Styling Section*/
 .section-heading {
@@ -909,6 +691,14 @@ h6 {
     background-color: #fff;
     box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.15);
     transition: all .45s ease; }
+    .experiments-container .inner-container .experiment:nth-child(1) .experiment-number-area:after {
+      content: '01'; }
+    .experiments-container .inner-container .experiment:nth-child(2) .experiment-number-area:after {
+      content: '02'; }
+    .experiments-container .inner-container .experiment:nth-child(3) .experiment-number-area:after {
+      content: '03'; }
+    .experiments-container .inner-container .experiment:nth-child(4) .experiment-number-area:after {
+      content: '04'; }
     .experiments-container .inner-container .experiment .experiment-mask {
       position: absolute;
       top: 0;
@@ -986,10 +776,9 @@ h6 {
         background-color: #1c1d25;
         width: 30px; }
       .experiments-container .inner-container .experiment .experiment-number-area:after {
-        content: '01';
         margin-top: -4px;
         top: 5px;
-        content: '01';
+        /*content: '01';*/
         text-align: right;
         font-size: 8px;
         font-weight: 700;
@@ -1009,6 +798,14 @@ h6 {
 .experiments-container::after {
   content: '';
   clear: both; }
+
+@media only screen and (max-width: 56.25em) {
+  .experiment {
+    width: 50% !important; } }
+
+@media only screen and (max-width: 25em) {
+  .experiment {
+    width: 100% !important; } }
 
 .footer {
   background-color: #1c1d25;
@@ -1061,6 +858,12 @@ h6 {
     .footer .footer-copy a {
       color: #f3f3f3; }
 
+@media only screen and (max-width: 25em) {
+  .footer {
+    padding: 8% 3%; }
+    .footer .footer-content ul a + a {
+      margin-left: 12px !important; } }
+
 /*  Modals  */
 .modal-aboutme {
   visibility: hidden;
@@ -1070,8 +873,17 @@ h6 {
   visibility: visible !important;
   opacity: 1 !important; }
 
-#aboutme {
+#background-link {
+  display: none;
+  width: 200%;
+  height: 200%;
   position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red; }
+
+#aboutme {
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);

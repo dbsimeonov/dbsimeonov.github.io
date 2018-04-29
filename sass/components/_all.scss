@@ -182,6 +182,18 @@
 	padding-right: 15px;
 	padding-left: 15px;
 }
+@media only screen and (max-width:41.25em){
+    .container{
+        padding: 0 30px !important;
+    }
+}
+
+@media only screen and (max-width:25em){
+    .container{
+        padding: 0 35px !important;
+    }
+}
+
 
 /* ------------------------------------------------------------ *\
 	Btn
@@ -322,7 +334,7 @@
     width:80%;
     opacity:1;
     height:480px;
-    background-color:#1c1d25;
+    /*background-color:#1c1d25;*/
     position:relative;
     box-shadow:0 20px 80px 0 rgba(0,0,0,.45);
     margin-left:auto;
@@ -414,6 +426,7 @@
     z-index:101
 }
 .case-studies-list .case-study .case-study-mask-number{
+    font-size: 16em; 
     display:none
 }
 .case-studies-list .case-study .case-study-text-section{
@@ -575,11 +588,24 @@
         height:290px
     }
     .case-studies-list .case-study .case-study-title{
-        font-size:1.125em
+        font-size:2.725em
+    }
+    .case-studies-list .case-study .case-study-subtitle{
+        font-size: 1.725em;
+        font-weight: 100;
+        opacity: .8;  
     }
     .case-studies-list .case-study .case-study-text-section{
         left:25px;
         bottom:50px
+    }
+    .case-studies-list .case-study .btn{
+        font-size: 0.9125em; 
+        padding:12px 20px;
+
+        .btn-icon{
+            top:1px;
+        }
     }
 }
 
@@ -630,6 +656,19 @@
             background-color: #fff;
             box-shadow: 0 20px 60px 0 rgba(0,0,0,.15);
             transition: all .45s ease; 
+
+            &:nth-child(1) .experiment-number-area:after{
+                content: '01';
+            }
+            &:nth-child(2) .experiment-number-area:after{
+                content: '02';
+            }
+            &:nth-child(3) .experiment-number-area:after{
+                content: '03';
+            }
+            &:nth-child(4) .experiment-number-area:after{
+                content: '04';
+            }
             
             .experiment-mask{
                 position: absolute;
@@ -726,15 +765,16 @@
                 }
 
                 &:after{
-                    content: '01';
                     margin-top: -4px; 
                     top: 5px;
-                    content: '01';
+                    /*content: '01';*/
                     text-align: right;
                     font-size: 8px;
                     font-weight: 700;
                     padding-right: 40px;
                 }
+
+
             }
 
             &:hover{
@@ -760,4 +800,14 @@
 .experiments-container::after{
     content: '';
     clear: both;
+}
+@media only screen and (max-width:56.25em){
+    .experiment{
+        width: 50% !important;
+    }
+}
+@media only screen and (max-width:25em){
+    .experiment{
+        width: 100% !important;
+    }
 }

@@ -72,9 +72,9 @@
 	<div class="cover">
 		<div class="cover-video">
 			<video autoplay="" loop="" muted="">
-				<source src="css/video/mp4.mp4" type="video/mp4">
-				<source src="css/video/webm.webm" type="video/webm">
-				<source src="css/video/ogv.ogv" type="video/ogg">
+				<source src="css/video/videomp4.mp4" type="video/mp4">
+				<source src="css/video/videowebm.webm" type="video/webm">
+				<!-- <source src="css/video/ogv-2.ogv" type="video/ogg"> -->
 			</video>
 		</div><!-- /.cover-video -->
 
@@ -88,7 +88,7 @@
 							<p>Interactive Front-end Developer</p>
 						</div><!-- /.cover-entry -->
 
-						<div class="cover-actions" onclick="openModal()">
+						<div class="cover-actions" onclick="openModal();">
 							<a href="#" class="btn">
 								<span class="btn-text">About Me</span>
 
@@ -120,7 +120,7 @@
 
 	<ul class="case-studies-list">
 	   <li>
-	      <a href="" style="background-image: url('#');" class="case-study">
+	      <a href="" style="background-image: url('css/images/temp/hennessy.jpg');" class="case-study">
 	         <div class="case-study-mask"></div>
 	         <div class="case-study-reveal-mask"></div>
 	         <div class="case-study-mask-number">
@@ -130,8 +130,8 @@
 	            </div>
 	         </div>
 	         <div class="case-study-text-section">
-	            <h3 class="h2 case-study-title">Cerasa Redesign</h3>
-	            <h5 class="case-study-subtitle">Leader in bathroom furniture since 1983.</h5>
+	            <h3 class="h2 case-study-title">Hennessy</h3>
+	            <h5 class="case-study-subtitle">Dublicating Hennessy Website</h5>
 	            <button class="btn">
 					<span class="btn-text">About Me</span>
 
@@ -146,7 +146,7 @@
 	      </a>
 	   </li>
 	   <li>
-	      <a href="/lato" id="lato" style="background-image: url('#');" class="case-study">
+	      <a href="/lato" id="lato" style="background-image: url('css/images/temp/bikestore.png');" class="case-study">
 	         <div class="case-study-mask"></div>
 	         <div class="case-study-reveal-mask"></div>
 	         <div class="case-study-mask-number">
@@ -156,8 +156,8 @@
 	            </div>
 	         </div>
 	         <div class="case-study-text-section">
-	            <h3 class="h2 case-study-title">Project Lato</h3>
-	            <h5 class="case-study-subtitle">The Next generation Management System.</h5>
+	            <h3 class="h2 case-study-title">Bike Idel</h3>
+	            <h5 class="case-study-subtitle">Amazing multifunctioning website</h5>
 	            <button class="btn">
 					<span class="btn-text">About Me</span>
 
@@ -172,7 +172,7 @@
 	      </a>
 	   </li>
 	   <li>
-	      <a href="/la-francesca" id="la-francesca" style="background-image: url('#');" class="case-study">
+	      <a href="/la-francesca" id="la-francesca" style="background-image: url('css/images/temp/nutritionist.png');" class="case-study">
 	         <div class="case-study-mask"></div>
 	         <div class="case-study-reveal-mask"></div>
 	         <div class="case-study-mask-number">
@@ -182,8 +182,8 @@
 	            </div>
 	         </div>
 	         <div class="case-study-text-section">
-	            <h3 class="h2 case-study-title">Villaggi La Francesca</h3>
-	            <h5 class="case-study-subtitle">A green oasis on the sea of the Cinque Terre.</h5>
+	            <h3 class="h2 case-study-title">Nutritionist</h3>
+	            <h5 class="case-study-subtitle">Personal nutritionist website with blog</h5>
 	            <button class="btn">
 					<span class="btn-text">About Me</span>
 
@@ -198,7 +198,7 @@
 	      </a>
 	   </li>
 	   <li>
-	      <a href="/sportland" id="sportland" style="background-image: url('#');" class="case-study">
+	      <a href="/sportland" id="sportland" style="background-image: url('css/images/temp/hennessy.jpg');" class="case-study">
 	         <div class="case-study-mask"></div>
 	         <div class="case-study-reveal-mask"></div>
 	         <div class="case-study-mask-number">
@@ -322,10 +322,12 @@
 				<a href="#" class="link">Codepen</a>
 			</ul>
 			<p class="footer-copy">
-				&copy; 2018 Daniel Simeonov - <a href="#">Contact</a>
+				&copy; 2018 Daniel Simeonov - <a href="#" onclick="openModal()">Contact</a>
 			</p><!-- /.footer-copy -->
 		</div><!-- /.footer-content -->
 	</footer><!-- /.footer -->
+
+	<a href="#" id="backgroundLink" onclick="closeModal()"></a>
 
 	<div class="modal modal-aboutme" id="aboutme">
 		<div class="bg--white" id="bgWhite">

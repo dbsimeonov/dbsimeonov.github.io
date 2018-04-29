@@ -6,6 +6,7 @@ const openModal = () =>{
 	target.classList.add('modal-open');
 	bgDark.style.transform = 'translateY(0%)';
 	bgWhite.style.transform = 'translateY(0%)';
+
 }
 const closeModal = () => {
 	const target = document.querySelector('#aboutme');
