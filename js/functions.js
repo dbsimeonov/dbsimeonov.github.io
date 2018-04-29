@@ -85,6 +85,13 @@ const navTrigger = () => {
 	});
 }
 
+window.sr = ScrollReveal({ duration: 2000 });
+sr.reveal('.experiment', 50);
+sr.reveal('.case-study');
+
+
+
+
 window.addEventListener('load', () => {
 	calculateSpeed();
 
