@@ -9,29 +9,19 @@
 	opacity: 1 !important; 
 }
 
-#background-link{
-	display: none;
-	width: 200%;
-	height: 200%;
-	position: absolute;
-	top: 0; left: 0;
-	background-color: red; 
-}
-
-#aboutme{
+.modal-aboutme{
 	position: fixed;
 	top: 50%; left: 50%; 
 	transform: translate(-50%,-50%);
  	width: 90vw; 
  	text-align: center;
-	/*background-color: rgba(28,29,37,.985);*/
 	z-index: 1000; 
 	box-shadow: 0 20px 80px 0 rgba(0,0,0,.55);
 	overflow: hidden;
-	/*transform: translateY(70%);*/
 	transition: all ease .5s;
 	display: flex;
-	
+	font-size: 15px;
+
 	.bg--white,
 	.bg--dark{
 		width: 50%;
@@ -43,6 +33,15 @@
 			text-decoration: none;
 			font-weight: 500; 
 		}
+	}
+	h6{
+		margin-bottom: 22px; 
+	}
+	.sub-heading{
+		margin-bottom: 20px;
+		font-size: .825em;
+		font-weight: 100;
+		font-style: italic;   
 	}
 
 	.bg--white{
@@ -64,7 +63,8 @@
 		p{
 			font-weight: 300;
 			line-height: 1.3125em;
-			font-size: 1.025em;   
+			font-size: 1.025em; 
+			margin-bottom: 5px;   
 		}
 		ul{
 				margin-top: 40px;
@@ -115,13 +115,10 @@
 		color: #dadada;
 		position: relative;
 		overflow: hidden;
+
 		/*Animation*/
 		transform: translateY(-200%);
 		transition: transform .5s ease;
-		
-		h6{ 
-			margin-bottom: 15px;  
-		}
 
 		.background-text{
 			color: #fff;
@@ -200,3 +197,35 @@
 		}
 	}
 }
+
+/*Media Query Tablet 53.125em / 850px*/
+@media only screen and (max-width: 53.125em){
+	.modal-aboutme{
+	 	width: 100vw; 
+		height: 100%;
+		overflow-y: auto;
+		flex-wrap: wrap;
+		flex-direction: row-reverse;
+
+		.bg--white{
+			width: 100%;
+		}
+		.bg--dark{
+			width: 100%;
+		}
+	}
+}
+/*Media Query Tablet 28.75em / 460 px*/
+@media only screen and (max-width: 53.125em){
+	.modal-aboutme{
+
+		.bg--white{
+			padding: 80px 40px;
+		}
+
+		.bg--dark{
+			padding: 80px 40px;
+		}
+	}
+}
+/*Media Query Tablet 28.75em / 460 px*/
