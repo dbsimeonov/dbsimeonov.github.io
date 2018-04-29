@@ -55,7 +55,18 @@
 			<img src="css/images/sprite/logo.png" alt="Daniel Simeonov">
 		</a>
 
+		<a href="#" class="menu-trigger nav-trigger">
+			<i class="menu-trigger-bar top"></i>
+			<i class="menu-trigger-bar middle"></i>
+			<i class="menu-trigger-bar bottom"></i>
+		</a>
+
 		<div class="header-content">
+			<a href="#" class="close-trigger">
+				<i class="close-trigger-bar left"></i>
+				<i class="close-trigger-bar right"></i>
+			</a>
+
 			<div class="nav">
 				<ul>
 					<li>
@@ -333,61 +344,63 @@
 	</footer><!-- /.footer -->
 
 	<div class="modal modal-aboutme" id="aboutme">
-		<div class="bg--white" id="bgWhite">
-			<h6 class="color-black">about me.</h6>
-			<div class="background-text">
-				About
-			</div><!-- /.background-text -->
-			<p class="sub-heading">Interactive Front-end developer</p><!-- /.sub-heading -->
-			<p>I'm Daniel Simeonov, 21-year-old living in <span class="underlined">London</span> who is <span class="underlined">self-taught</span> code for more than an year. I'm an ambitious person who seeks new challenges and always excited to learn new technologies. Have a big passion of coding and creating everything from scratch. With the aim of getting the dream job <span class="underlined">Front End Developer</span> I've been consistent in my learning path and always faced the issues in my code with <span class="underliend">smile</span>. Please make sure to check my <a href="https://github.com/dbsimeonov" class="underlined">Github</a> profile to see most of my work.</p>
-			<ul>
-				<li><span>Html</span></li>
-				<li><span>Css</span></li>
-				<li><span>Sass</span></li>
-				<li><span>Bootstrap</span></li>
-				<li><span>Javascript</span></li>
-				<li><span>JQuery</span></li>
-				<li><span>Github</span></li>
-			</ul>
-			<div class="parameters">
-				<p>SP: <span id="parameters">0.000000000</span></p>
-			</div><!-- /#parameters.parameters -->
-		</div><!-- /.bg-white-->
-		<div class="bg--dark" id="bgDark">
-			<div class="background-text">
-				Contact
-			</div><!-- /.background-text -->
-			<h6 class="color--white">Let's talk</h6>
-			<p class="sub-heading color--white">New projects, freelance inquiry or even a coffee(why not a pint).</p><!-- /.sub-heading -->
+		<div class="modal-inner">
+			<div class="bg--white" id="bgWhite">
+				<h6 class="color-black">about me.</h6>
+				<div class="background-text">
+					About
+				</div><!-- /.background-text -->
+				<p class="sub-heading">Interactive Front-end developer</p><!-- /.sub-heading -->
+				<p>I'm Daniel Simeonov, 21-year-old living in <span class="underlined">London</span> who is <span class="underlined">self-taught</span> code for more than an year. I'm an ambitious person who seeks new challenges and always excited to learn new technologies. Have a big passion of coding and creating everything from scratch. With the aim of getting the dream job <span class="underlined">Front End Developer</span> I've been consistent in my learning path and always faced the issues in my code with <span class="underliend">smile</span>. Please make sure to check my <a href="https://github.com/dbsimeonov" class="underlined">Github</a> profile to see most of my work.</p>
+				<ul>
+					<li><span>Html</span></li>
+					<li><span>Css</span></li>
+					<li><span>Sass</span></li>
+					<li><span>Bootstrap</span></li>
+					<li><span>Javascript</span></li>
+					<li><span>JQuery</span></li>
+					<li><span>Github</span></li>
+				</ul>
+				<div class="parameters">
+					<p>SP: <span id="parameters">0.000000000</span></p>
+				</div><!-- /#parameters.parameters -->
+			</div><!-- /.bg-white-->
+			<div class="bg--dark" id="bgDark">
+				<div class="background-text">
+					Contact
+				</div><!-- /.background-text -->
+				<h6 class="color--white">Let's talk</h6>
+				<p class="sub-heading color--white">New projects, freelance inquiry or even a coffee(why not a pint).</p><!-- /.sub-heading -->
 
-			<form>
-				<label for="name">Name *</label>
-				<input type="text">
+				<form>
+					<label for="name">Name *</label>
+					<input type="text">
 
-				<label for="email">E-mail *</label>
-				<input type="text">
-				
-				<label for="message">Message *</label>
-				<textarea name="message" rows="5"></textarea>
-			</form>
+					<label for="email">E-mail *</label>
+					<input type="text">
+					
+					<label for="message">Message *</label>
+					<textarea name="message" rows="5"></textarea>
+				</form>
 
-			<button class="btn">
-				<span class="btn-text">Send Message</span>
+				<button class="btn">
+					<span class="btn-text">Send Message</span>
 
-				<div class="btn-mask"></div>
+					<div class="btn-mask"></div>
 
-				<span class="btn-icon">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213"><path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path>
-					</svg>
-				</span>
-			</button>
+					<span class="btn-icon">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213"><path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path>
+						</svg>
+					</span>
+				</button>
 
-			<div class="modal-close" onclick="closeModal()">
-				<span id="close-one"></span>
-				
-				<span id="close-two"></span>
-			</div><!-- /.modal-close -->
-		</div><!-- /.bg-/-dark -->
+				<div class="modal-close" onclick="closeModal()">
+					<span id="close-one"></span>
+					
+					<span id="close-two"></span>
+				</div><!-- /.modal-close -->
+			</div><!-- /.bg-/-dark -->
+		</div><!-- /.modal-inner -->
 	</div><!-- /#aboutme.modal modal-aboutme --> 
 
 	<script src="vendor/jquery.vide.min.js"></script>

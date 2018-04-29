@@ -67,4 +67,26 @@ let calculateSpeed = () => {
 	document.onmousemove = handleMouseMove;
 }
 
-calculateSpeed();
+const navTrigger = () => {
+	const openButton = document.querySelector('.nav-trigger');
+	const closeButton = document.querySelector('.close-trigger');
+	const mobileMenu = document.querySelector('.header-content');
+
+	openButton.addEventListener('click', (event) => {
+		event.preventDefault();
+
+		mobileMenu.classList.add('active');
+	});
+
+	closeButton.addEventListener('click', (event) => {
+		event.preventDefault();
+
+		mobileMenu.classList.remove('active');
+	});
+}
+
+window.addEventListener('load', () => {
+	calculateSpeed();
+
+	navTrigger();
+});

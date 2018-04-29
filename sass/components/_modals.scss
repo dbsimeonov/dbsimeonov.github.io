@@ -11,19 +11,28 @@
 
 .modal-aboutme{
 	position: fixed;
-	top: 50%; left: 50%; 
-	transform: translate(-50%,-50%);
- 	width: 90vw; 
+	left: 0; 
+	top: 0; 
+	bottom: 0; 
+ 	width: 100%; 
+ 	margin: 2% 0;
  	text-align: center;
 	z-index: 1000; 
 	box-shadow: 0 20px 80px 0 rgba(0,0,0,.55);
 	overflow: hidden;
 	transition: all ease .5s;
-	display: flex;
 	font-size: 15px;
+
+	.modal-inner {
+		display: flex;
+		width: 90vw;
+		margin: 0 auto;
+	}
 
 	.bg--white,
 	.bg--dark{
+		flex-grow: 0;
+		flex-shrink: 0;
 		width: 50%;
 		padding: 10rem 8rem 10rem 10rem;
 		text-align: left;
@@ -188,11 +197,11 @@
 			}
 			#close-one{
 				transform: rotate(45deg);
-				top: 43px;
+				top: 16px;
 			}
 			#close-two{
 				transform: rotate(-45deg);
-				top: 33px;
+				top: 6px;
 			}
 		}
 	}
@@ -204,8 +213,12 @@
 	 	width: 100vw; 
 		height: 100%;
 		overflow-y: auto;
-		flex-wrap: wrap;
-		flex-direction: row-reverse;
+		margin: 0;
+		
+		.modal-inner {
+			flex-direction: column-reverse;
+			width: 100vw;
+		}
 
 		.bg--white{
 			width: 100%;
