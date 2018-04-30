@@ -1,3 +1,4 @@
+/*Header logo + navbar*/
 .header {
 	position: absolute;
 	z-index: 1000; 
@@ -17,13 +18,14 @@
     }
 }
 
+/*For Mobile Nav Trigger*/
 @media(max-width: 767px){
     .header {
         .close-trigger,
         .menu-trigger {
             display: block;
         }
-
+        /*Navbar container*/
         .header-content {
             position: fixed; 
             z-index: -1;
@@ -117,7 +119,7 @@
                 z-index:46;
             }
         }
-
+        /* When the navbar on mobile is clicked*/
         .header-content.active {
             visibility:visible;
             opacity: 1;
@@ -156,13 +158,13 @@
 /* ------------------------------------------------------------ *\
     CLose Trigger Bar
 \* ------------------------------------------------------------ */
-
+/* Closing the mobile nav*/
 .close-trigger-bar{
     display:block;
     width:100%;
     height:4px;
     background-color:#e3d8d3;
-    position:relative
+    position:relative;
 }
 .close-trigger-bar:before{
     content:"";
@@ -173,22 +175,22 @@
     width:0;
     height:100%;
     background-color:#fff;
-    transition:all .3s cubic-bezier(.55,0,.1,1)
+    transition:all .3s cubic-bezier(.55,0,.1,1);
 }
 .close-trigger-bar.left{
     -webkit-transform:rotate(-45deg);
-    transform:rotate(-45deg)
+    transform:rotate(-45deg);
 }
 .close-trigger-bar.right{
     -webkit-transform:rotate(45deg);
     transform:rotate(45deg);
-    top:-3px
+    top:-3px;
 }
 
 /* ------------------------------------------------------------ *\
     Menu Trigger Bar
 \* ------------------------------------------------------------ */
-
+/*Mobile Only*/
 .menu-trigger-bar{
     display:block;
     width:100%;
@@ -224,7 +226,7 @@
 /* ------------------------------------------------------------ *\
 	The Arrow
 \* ------------------------------------------------------------ */
-
+/*Arrow on Cover*/
 .the-arrow{
     position:relative;
     display:inline-block;

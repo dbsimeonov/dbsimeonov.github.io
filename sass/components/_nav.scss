@@ -1,8 +1,12 @@
+/*Navbar on header*/
 .nav { 
-	font-size: 18px; color: #b0b2cb; 
+	font-size: 18px; 
+	color: #b0b2cb; 
 
 	ul{
-		display: flex; justify-content: flex-end; align-items: center;
+		display: flex; 
+		justify-content: flex-end; 
+		align-items: center;
 
 		li+li{
 			margin-left: 40px;
@@ -26,6 +30,7 @@
 					left: 0;
 				}
 			}
+			/*Styling the bb-effect on hover*/
 			&:before,
 			&:after{
 				content: ''; 

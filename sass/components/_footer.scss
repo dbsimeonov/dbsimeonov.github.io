@@ -3,9 +3,11 @@
 	width: 100%;
 	padding: 8% 0; 
 	text-align: center;
+	/*Making it with higher brightness and removing colors*/
 	.logo--white{
 		filter: grayscale(1) brightness(1.5) !important;
 	}
+	/*Container*/
 	.footer-content{
 		font-size: 1.5em; 
 		ul{
