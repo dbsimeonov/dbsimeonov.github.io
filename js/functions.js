@@ -85,15 +85,40 @@ const navTrigger = () => {
 	});
 }
 
-window.sr = ScrollReveal({ duration: 2000 });
-sr.reveal('.experiment', 50);
-sr.reveal('.case-study');
 
+// interval and custom config passed to reveal
+const animations = () => {
+	window.sr = ScrollReveal();
 
+	sr.reveal('.cover-content', { duration: 1000}, 50);
+	sr.reveal('.case-study', { duration: 2000}, 50);
+	sr.reveal('.experiment', { duration: 2000 }, 250);	
+}
+
+// SMooth Scroll 
+const smoothLinks = () => {
+	const btnProjects = document.querySelector('#btnProjects');
+	const btnExperim  = document.querySelector('#btnExperiments');
+	const btnHead     = document.querySelector('#goToLogo');
+	const secProjects = document.querySelector('#projects');
+	const secExperim  = document.querySelector('#experiments');
+	const secHead     = document.querySelector('.header');
+
+	btnProjects.addEventListener('click', () =>{
+		$(secProjects).animatescroll({scrollSpeed:1200, easing:'easeInOutBack', padding: 215});
+	});
+	btnExperim.addEventListener('click', () => {
+		$(secExperim).animatescroll({scrollSpeed:1200, easing:'easeInOutBack', padding: 215});
+	});
+	btnHead.addEventListener('click', () => {
+		$(secHead).animatescroll({scrollSpeed:1300, easing:'easeInQuad'});
+	});
+}
 
 
 window.addEventListener('load', () => {
+	animations();
+	smoothLinks();
 	calculateSpeed();
-
 	navTrigger();
 });
