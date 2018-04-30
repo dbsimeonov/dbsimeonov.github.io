@@ -45,7 +45,7 @@ let calculateSpeed = () => {
 		setTimeout(reportSpeed, mrefreshinterval);
 	};
 
-	const reportSpeed = function() {
+	const reportSpeed = () => {
 		var now = new Date();
 		var timenow = now.getTime();
 
@@ -75,6 +75,8 @@ const navTrigger = () => {
 	openButton.addEventListener('click', (event) => {
 		event.preventDefault();
 
+		mobileNavClose();
+
 		mobileMenu.classList.add('active');
 	});
 
@@ -85,6 +87,18 @@ const navTrigger = () => {
 	});
 }
 
+const mobileNavClose = () => {
+	const header = document.querySelector('.header-content');
+	const nav = document.querySelector('.nav');
+	const links = [].slice.call(document.querySelectorAll('.link'));
+
+	links.forEach( e => {
+		e.addEventListener('click', () => {
+			header.classList.remove('active');
+		});
+	});
+
+}
 
 // interval and custom config passed to reveal
 const animations = () => {
@@ -100,12 +114,16 @@ const smoothLinks = () => {
 	const btnProjects = document.querySelector('#btnProjects');
 	const btnExperim  = document.querySelector('#btnExperiments');
 	const btnHead     = document.querySelector('#goToLogo');
+	const btnArrow    = document.querySelector('.hero-go-next');
 	const secProjects = document.querySelector('#projects');
 	const secExperim  = document.querySelector('#experiments');
 	const secHead     = document.querySelector('.header');
 
 	btnProjects.addEventListener('click', () =>{
 		$(secProjects).animatescroll({scrollSpeed:1200, easing:'easeInOutBack', padding: 215});
+	});
+	btnArrow.addEventListener('click', () => {
+		$(secProjects).animatescroll({scrollSpeed:1300, easing:'easeInQuad', padding: 215});
 	});
 	btnExperim.addEventListener('click', () => {
 		$(secExperim).animatescroll({scrollSpeed:1200, easing:'easeInOutBack', padding: 215});
