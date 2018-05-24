@@ -792,7 +792,13 @@ h6 {
         transform: scale(1);
         transition: transform .3s ease,-webkit-transform .3s ease; }
       .experiments-container .inner-container .experiment .experiment-circle .experiment-img-1 {
-        background-image: url(images/temp/experiment-brick.png); }
+        background-image: url(images/temp/todo.png); }
+      .experiments-container .inner-container .experiment .experiment-circle .experiment-img-2 {
+        background-image: url(images/temp/googleapi.png); }
+      .experiments-container .inner-container .experiment .experiment-circle .experiment-img-3 {
+        background-image: url(images/temp/music-app.png); }
+      .experiments-container .inner-container .experiment .experiment-circle .experiment-img-4 {
+        background-image: url(images/temp/cal.png); }
     .experiments-container .inner-container .experiment .experiment-title-area {
       position: absolute;
       top: 85%;
