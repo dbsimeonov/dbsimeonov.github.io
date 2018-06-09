@@ -951,14 +951,26 @@ h6 {
   top: 0;
   bottom: 0;
   width: 100%;
-  margin: 2% 0;
+  margin: 0;
   text-align: center;
   z-index: 1000;
-  box-shadow: 0 20px 80px 0 rgba(0, 0, 0, 0.55);
   overflow: hidden;
   transition: all ease .5s;
-  font-size: 15px; }
+  font-size: 15px;
+  display: flex;
+  align-items: center; }
+  .modal-aboutme .modal-backdrop {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10; }
   .modal-aboutme .modal-inner {
+    position: relative;
+    z-index: 20;
+    padding: 2% 0;
     display: flex;
     width: 90vw;
     margin: 0 auto; }
@@ -1057,8 +1069,9 @@ h6 {
       font-weight: 700;
       opacity: .1; }
     .modal-aboutme .bg--dark form {
-      margin-bottom: 4rem;
       z-index: 3; }
+      .modal-aboutme .bg--dark form .form-body {
+        margin-bottom: 4rem; }
       .modal-aboutme .bg--dark form label {
         color: #dadada;
         letter-spacing: 2px;

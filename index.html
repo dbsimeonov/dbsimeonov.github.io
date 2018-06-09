@@ -316,6 +316,8 @@
 	</footer><!-- /.footer -->
 
 	<div class="modal modal-aboutme" id="aboutme">
+		<div class="modal-backdrop"></div>
+
 		<div class="modal-inner">
 			<div class="bg--white" id="bgWhite">
 				<h6 class="color-black">about me.</h6>
@@ -326,7 +328,7 @@
 				<p>
 					Talented, enthusiastic and technically strong individual with over a year front-end web development and technical experience. I have real passion for coding, technology and software and possess proven ability of balancing multiple work streams within a fast paced, demanding environment. With excellent HTML, CSS (SASS) and JavaScript development skills, currently I’m seeking entry level Junior Front End Developer position with a vibrant company that will allow me to be part of a highly collaborative team, develop my technical skills and work on projects for challenging client requirements. For more information on my work, pre-existing skills and background experience please review my <a href="https://github.com/dbsimeonov" class="underlined">Github</a> profile.
 					<a href="Daniel Simeonov CV.pdf" class="underlined" download>Here</a> is my downloadable resume.
-				</p> 
+				</p>
 				<ul>
 					<li><span>Html</span></li>
 					<li><span>Css</span></li>
@@ -346,28 +348,30 @@
 				</div><!-- /.background-text -->
 				<h6 class="color--white">Let's talk</h6>
 				<p class="sub-heading color--white">New projects, freelance inquiry or even a coffee(why not a pint).</p><!-- /.sub-heading -->
+				
+				<form method="POST" action="https://formspree.io/dbsimeonov@yahoo.com">
+					<div class="form-body">
+						<label for="name">Name *</label>
+						<input type="text" name="name">
 
-				<form>
-					<label for="name">Name *</label>
-					<input type="text">
+						<label for="email">E-mail *</label>
+						<input type="email" name="email">
+						
+						<label for="message">Message *</label>
+						<textarea name="message" rows="5" name="message"></textarea>
+					</div>
 
-					<label for="email">E-mail *</label>
-					<input type="text">
-					
-					<label for="message">Message *</label>
-					<textarea name="message" rows="5"></textarea>
+					<button type="submit" class="btn">
+						<span class="btn-text">Send Message</span>
+
+						<div class="btn-mask"></div>
+
+						<span class="btn-icon">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213"><path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path>
+							</svg>
+						</span>
+					</button>
 				</form>
-
-				<button class="btn">
-					<span class="btn-text">Send Message</span>
-
-					<div class="btn-mask"></div>
-
-					<span class="btn-icon">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213"><path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path>
-						</svg>
-					</span>
-				</button>
 
 				<div class="modal-close" onclick="closeModal()">
 					<span id="close-one"></span>
