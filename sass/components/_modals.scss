@@ -1,14 +1,16 @@
 /*  Modals  */
-
 .modal-aboutme{
 	visibility: hidden;
 	opacity: 0; 
 }
+
+/*Class Open*/
 .modal-open{
 	visibility: visible !important;
 	opacity: 1 !important; 
 }
 
+/*Modal*/
 .modal-aboutme{
 	position: fixed;
 	left: 0; 
@@ -66,7 +68,8 @@
 		font-weight: 100;
 		font-style: italic;   
 	}
-
+	
+	/*Modal with White Background*/
 	.bg--white{
 		text-align: justify;
 		position: relative;
@@ -133,6 +136,8 @@
 			}
 		}
 	}
+
+	/*Modal with Black Background*/
 	.bg--dark{
 		background-color: rgb(28,29,37);
 		color: #dadada;
@@ -230,7 +235,8 @@
 		height: 100%;
 		overflow-y: auto;
 		margin: 0;
-		
+		display: block;
+
 		.modal-inner {
 			flex-direction: column-reverse;
 			width: 100vw;
@@ -257,4 +263,3 @@
 		}
 	}
 }
-/*Media Query Tablet 28.75em / 460 px*/

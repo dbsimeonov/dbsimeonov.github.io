@@ -346,13 +346,15 @@ h6 {
   clear: both;
   display: table; }
 
+/*Cover Video and Text Wrapper*/
 .cover {
   position: relative;
   padding-top: 130px;
   overflow: hidden;
   font-size: 20px;
   color: #fff;
-  font-style: italic; }
+  font-style: italic;
+  /*Arrow Down*/ }
   .cover .cover-inner {
     position: relative;
     display: flex;
@@ -941,10 +943,12 @@ h6 {
   visibility: hidden;
   opacity: 0; }
 
+/*Class Open*/
 .modal-open {
   visibility: visible !important;
   opacity: 1 !important; }
 
+/*Modal*/
 .modal-aboutme {
   position: fixed;
   left: 0;
@@ -958,7 +962,9 @@ h6 {
   transition: all ease .5s;
   font-size: 15px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  /*Modal with White Background*/
+  /*Modal with Black Background*/ }
   .modal-aboutme .modal-backdrop {
     position: absolute;
     left: 0;
@@ -1132,7 +1138,8 @@ h6 {
     width: 100vw;
     height: 100%;
     overflow-y: auto;
-    margin: 0; }
+    margin: 0;
+    display: block; }
     .modal-aboutme .modal-inner {
       flex-direction: column-reverse;
       width: 100vw; }
@@ -1148,7 +1155,6 @@ h6 {
   .modal-aboutme .bg--dark {
     padding: 80px 40px; } }
 
-/*Media Query Tablet 28.75em / 460 px*/
 .btn {
   font-size: .725em;
   letter-spacing: 3px;

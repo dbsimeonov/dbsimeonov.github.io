@@ -8,6 +8,7 @@ const openModal = () =>{
 	bgWhite.style.transform = 'translateY(0%)';
 
 }
+
 const closeModal = () => {
 	const target = document.querySelector('#aboutme');
 	const bgWhite = document.querySelector('#bgWhite');
@@ -18,7 +19,7 @@ const closeModal = () => {
 	bgWhite.style.transform = 'translateY(200%)';
 }
 
-
+// Function to calculate roughly speed of cursor on desktop
 let calculateSpeed = () => {
 	let lastmousex = -1;
 	let lastmousey = -1;
@@ -67,6 +68,7 @@ let calculateSpeed = () => {
 	document.onmousemove = handleMouseMove;
 }
 
+// Mobile Nav Trigger
 const navTrigger = () => {
 	const openButton = document.querySelector('.nav-trigger');
 	const closeButton = document.querySelector('.close-trigger');
