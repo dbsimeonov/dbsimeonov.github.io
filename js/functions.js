@@ -122,9 +122,11 @@ const smoothLinks = () => {
 	btnProjects.addEventListener('click', () =>{
 		$(secProjects).animatescroll({scrollSpeed:1200, easing:'easeInOutBack', padding: 215});
 	});
+	
 	btnArrow.addEventListener('click', () => {
 		$(secProjects).animatescroll({scrollSpeed:1300, easing:'easeInQuad', padding: 215});
 	});
+	
 	btnHead.addEventListener('click', () => {
 		$(secHead).animatescroll({scrollSpeed:1300, easing:'easeInQuad'});
 	});
