@@ -24,7 +24,7 @@
 		min-height: calc(600px - 130px);
 		height: calc(100vh - 130px);
 	}
-	
+
 	.cover-title {
 		margin-bottom: 20px;
 	}
@@ -43,7 +43,7 @@
 		&:after {
 			content: '';
 			position: absolute;
-			z-index: 5; 
+			z-index: 5;
 			left: 0;
 			top: 0;
 			width: 100%;
@@ -57,6 +57,7 @@
 			top: 0;
 			bottom: 0;
 			right: 0;
+            height: 100%;
 		}
 	}
 
@@ -64,8 +65,7 @@
 		position: relative;
 		z-index: 20;
 	}
-    
-    /*Arrow Down*/
+
 	.hero-go-next {
 		position: absolute;
 		left: 50%;
@@ -78,13 +78,13 @@
         transition:opacity .35s ease .7s;
         z-index:7;
 
-        .go-next-label{
+        .go-next-label {
             font-style: normal;
             font-size: 15.5px;
-            text-align: center; 
+            text-align: center;
         }
 
-        .the-arrow{
+        .the-arrow {
 		    top:14px!important;
 		    left: 3px;
 		    width:45px;
@@ -196,7 +196,7 @@
 .case-studies-list .case-study .case-study-subtitle {
 	font-size: 27px;
 	font-weight: normal;
-	font-style: italic; 
+	font-style: italic;
 }
 
 .case-studies-list .case-study:before{
@@ -265,7 +265,7 @@
     z-index:101;
 }
 .case-studies-list .case-study .case-study-mask-number{
-    font-size: 16em; 
+    font-size: 16em;
     display:none;
 }
 .case-studies-list .case-study .case-study-text-section{
@@ -432,14 +432,14 @@
     .case-studies-list .case-study .case-study-subtitle{
         font-size: 1.725em;
         font-weight: 100;
-        opacity: .8;  
+        opacity: .8;
     }
     .case-studies-list .case-study .case-study-text-section{
         left:25px;
         bottom:50px;
     }
     .case-studies-list .case-study .btn{
-        font-size: 0.9125em; 
+        font-size: 0.9125em;
         padding:12px 20px;
 
         .btn-icon{
@@ -454,17 +454,17 @@
     margin-top: 35px;
     letter-spacing: 2px;
     font-weight: 600;
-    margin-bottom: 100px; 
-    
+    margin-bottom: 100px;
+
     .heading{
-        font-size: 12px; 
+        font-size: 12px;
         color: #b19386;
-        margin-bottom: 25px; 
+        margin-bottom: 25px;
     }
     .subheading{
         color: #4a4a4a;
-        font-size: 28px; 
-        font-weight: 800; 
+        font-size: 28px;
+        font-weight: 800;
     }
 }
 
@@ -479,7 +479,7 @@
             content: '';
             clear: both;
         }
-        
+
         .experiment{
             backface-visibility: hidden;
             display: block;
@@ -494,7 +494,7 @@
             text-align: center;
             background-color: #fff;
             box-shadow: 0 20px 60px 0 rgba(0,0,0,.15);
-            transition: all .45s ease; 
+            transition: all .45s ease;
 
             &:nth-child(1) .experiment-number-area:after{
                 content: '01';
@@ -508,7 +508,7 @@
             &:nth-child(4) .experiment-number-area:after{
                 content: '04';
             }
-            
+
             .experiment-mask{
                 position: absolute;
                 top: 0;
@@ -528,7 +528,7 @@
                 position: relative;
                 width: 100%;
                 z-index: 10;
-                
+
                 .experiment-img{
                     width: 230px;
                     height: 230px;
@@ -581,11 +581,11 @@
                         background-color: #1c1d25;
                         width: 7px;
                     }
-                }  
+                }
                 .experiment-title{
-                    font-weight: 500; 
-                    margin-top: 3px; 
-                    font-size: 1.175em; 
+                    font-weight: 500;
+                    margin-top: 3px;
+                    font-size: 1.175em;
                 }
             }
             .experiment-number-area{
@@ -602,7 +602,7 @@
                     transform-origin: 100% 100%;
                     right: 112%;
                     transition: .45s cubic-bezier(.52,.01,.16,1);
-                }  
+                }
 
                 &:before{
                     content: "";
@@ -613,7 +613,7 @@
                 }
 
                 &:after{
-                    margin-top: -4px; 
+                    margin-top: -4px;
                     top: 5px;
                     /*content: '01';*/
                     text-align: right;
@@ -647,7 +647,7 @@
                 }
             }
         }
-    } 
+    }
 }
 .experiments-container::after{
     content: '';
